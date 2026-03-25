@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paynance - Get paid next day with 100% patient approval guaranteed. Patient financing for healthcare providers.">
+    <title>Paynance - Healthcare Financing Brokerage | Near 100% Approval</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon Library -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Area -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Paynance</a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#programs" class="nav-item">Programs</a>
+                <a href="#how-it-works" class="nav-item">How It Works</a>
+                <a href="#industries" class="nav-item">Industries</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-primary" onclick="window.openModal()">Get Started</button>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#programs" class="nav-item">Programs</a>
+            <a href="#how-it-works" class="nav-item">How It Works</a>
+            <a href="#industries" class="nav-item">Industries</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-accent"></div>
+            <div class="container hero-container">
+                
+                <div class="hero-content">
+                    <div class="hero-badge">Near 100% Approval</div>
+                    <h1>Help Patients Say Yes With <br><span class="highlight">Smaller Monthly Payments</span></h1>
+                    <p class="hero-subtitle">Remove cost as a barrier to care by offering structured financing that works across credit tiers. Get paid upfront while your patients pay over time.</p>
+                    <ul class="hero-features">
+                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Simple 60-second mobile application</span></li>
+                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Soft credit inquiry only (no credit hit)</span></li>
+                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Funding directly to you in 1-2 days</span></li>
+                    </ul>
+                    <div class="hero-cta-group">
+                        <button class="btn btn-primary btn-large" onclick="window.openModal()">Get Started Today</button>
+                        <a href="#how-it-works" class="btn btn-outline btn-large">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Cloned Visual Cards -->
+                    <div class="payment-card slide-in-up delay-1">
+                        <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
+                        <div class="payment-info">
+                            <span class="label">Patient pays</span>
+                            <span class="amount">$150<span class="sub">/mo</span></span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arrow-icon"></i>
+                        <div class="receive-info text-right">
+                            <span class="label">Practice receives</span>
+                            <span class="receive-amount">$3,000</span>
+                            <span class="sub-label">upfront</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-card slide-in-up delay-2">
+                        <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
+                        <div class="payment-info">
+                            <span class="label">Patient pays</span>
+                            <span class="amount">$199<span class="sub">/mo</span></span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arrow-icon"></i>
+                        <div class="receive-info text-right">
+                            <span class="label">Practice receives</span>
+                            <span class="receive-amount">$4,000</span>
+                            <span class="sub-label">upfront</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-card slide-in-up delay-3">
+                        <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
+                        <div class="payment-info">
+                            <span class="label">Patient pays</span>
+                            <span class="amount">$249<span class="sub">/mo</span></span>
+                        </div>
+                        <i data-lucide="arrow-right" class="arrow-icon"></i>
+                        <div class="receive-info text-right">
+                            <span class="label">Practice receives</span>
+                            <span class="receive-amount">$6,000</span>
+                            <span class="sub-label">upfront</span>
+                        </div>
+                    </div>
+                    <p class="disclaimer text-center">Payment examples for illustration purposes only.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Programs Highlight -->
+        <section id="programs" class="py-20 bg-white">
+            <div class="container text-center max-w-4xl mx-auto">
+                <h2 class="section-title">A Network of Lenders in One Platform</h2>
+                <p class="section-subtitle">We act as a brokerage, pairing your patients with multiple lenders without multiple hits to their credit.</p>
+                <!-- Visual logos mocked as text or icon bubbles -->
+                <div class="lenders-grid mt-10">
+                    <div class="lender-box">Tier 1 Prime<br><span class="text-sm opacity-70">0% Interest Options</span></div>
+                    <div class="lender-box">Tier 2 Near-Prime<br><span class="text-sm opacity-70">Extended Terms</span></div>
+                    <div class="lender-box">Tier 3 Sub-Prime<br><span class="text-sm opacity-70">Down to 500 FICO</span></div>
+                    <div class="lender-box">Tier 4 No-Credit<br><span class="text-sm opacity-70">Payment Plans</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps Section (How It Works) -->
+        <section id="how-it-works" class="py-20 bg-light-blue">
+            <div class="container">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="section-title">Three Simple Steps</h2>
+                    <p class="section-subtitle">It's designed to be fast and frictionless so you don't slow down your closing process.</p>
+                </div>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i data-lucide="smartphone"></i></div>
+                            <div class="step-number">1</div>
+                        </div>
+                        <h3>Patients Apply</h3>
+                        <p>60-second mobile application.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i data-lucide="thumbs-up"></i></div>
+                            <div class="step-number">2</div>
+                        </div>
+                        <h3>We Approve</h3>
+                        <p>Near 100% coverage.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-icon-wrapper">
+                            <div class="step-icon"><i data-lucide="banknote"></i></div>
+                            <div class="step-number">3</div>
+                        </div>
+                        <h3>You Get Paid</h3>
+                        <p>Funds within 1-2 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs by Practice Type (Tabbed UI) -->
+        <section id="industries" class="py-20 bg-white">
+            <div class="container max-w-4xl mx-auto flex flex-col items-center justify-center">
+                
+                <div class="tabs-container w-full max-w-3xl">
+                    <div class="tabs-nav row" id="tabsNav">
+                        <button class="tab-btn active" data-target="medspas">
+                            <i data-lucide="sparkles"></i> Medical Spas
+                        </button>
+                        <button class="tab-btn" data-target="chiropractors">
+                            <i data-lucide="activity"></i> Chiropractors
+                        </button>
+                        <button class="tab-btn" data-target="dentists">
+                            <i data-lucide="smile"></i> Dentists
+                        </button>
+                        <button class="tab-btn" data-target="orthodontists">
+                            <i data-lucide="users"></i> Orthodontists
+                        </button>
+                        <button class="tab-btn" data-target="other">
+                            <i data-lucide="building"></i> Other
+                        </button>
+                    </div>
+                    
+                    <div class="tabs-content" id="tabsContent">
+                        
+                        <!-- Medspas -->
+                        <div class="tab-pane active fade-in" id="medspas">
+                            <div class="tab-header">
+                                <div class="tab-header-icon bg-light-green text-primary">
+                                    <i data-lucide="sparkles"></i>
+                                </div>
+                                <div class="tab-header-text">
+                                    <h3>Medical Spas</h3>
+                                    <span class="subtitle">Program Highlights</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="program-highlight-list">
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Guaranteed minimum of $4–6k</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>(Near) 100% approval rate*</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>12-month 0% APR promo, max 24-month term</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>First down payment starting $99</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Soft inquiry only</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>60-second patient mobile application</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>No proofs required</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Payout released next 1–2 business days</span></li>
+                            </ul>
+                            
+                            <div class="tab-footer-note">
+                                *Active SSN or Tax ID required. No active bankruptcies.
+                            </div>
+                        </div>
+
+                        <!-- Chiropractors -->
+                        <div class="tab-pane fade-in" id="chiropractors">
+                            <div class="tab-header">
+                                <div class="tab-header-icon bg-light-green text-primary">
+                                    <i data-lucide="activity"></i>
+                                </div>
+                                <div class="tab-header-text">
+                                    <h3>Chiropractors</h3>
+                                    <span class="subtitle">Program Highlights</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="program-highlight-list">
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Guaranteed minimum of $3–5k</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>(Near) 100% approval rate*</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Flexible payment terms for long-term care</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Soft inquiry only</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>60-second patient mobile application</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Payout released next 1–2 business days</span></li>
+                            </ul>
+                            
+                            <div class="tab-footer-note">
+                                *Active SSN or Tax ID required. No active bankruptcies.
+                            </div>
+                        </div>
+
+                        <!-- Dentists -->
+                        <div class="tab-pane fade-in" id="dentists">
+                            <div class="tab-header">
+                                <div class="tab-header-icon bg-light-green text-primary">
+                                    <i data-lucide="smile"></i>
+                                </div>
+                                <div class="tab-header-text">
+                                    <h3>Dentists</h3>
+                                    <span class="subtitle">Program Highlights</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="program-highlight-list">
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Approvals up to $15k for major procedures</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>(Near) 100% approval rate*</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>In-chair instant decisions</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Soft inquiry only</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Payout released next 1–2 business days</span></li>
+                            </ul>
+                            
+                            <div class="tab-footer-note">
+                                *Active SSN or Tax ID required. No active bankruptcies.
+                            </div>
+                        </div>
+
+                        <!-- Orthodontists -->
+                        <div class="tab-pane fade-in" id="orthodontists">
+                            <div class="tab-header">
+                                <div class="tab-header-icon bg-light-green text-primary">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="tab-header-text">
+                                    <h3>Orthodontists</h3>
+                                    <span class="subtitle">Program Highlights</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="program-highlight-list">
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Customizable recurring monthly terms</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>(Near) 100% approval rate*</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Zero risk to the practice for defaults</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Soft inquiry only</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Payout released next 1–2 business days</span></li>
+                            </ul>
+                            
+                            <div class="tab-footer-note">
+                                *Active SSN or Tax ID required. No active bankruptcies.
+                            </div>
+                        </div>
+
+                        <!-- Other -->
+                        <div class="tab-pane fade-in" id="other">
+                            <div class="tab-header">
+                                <div class="tab-header-icon bg-light-green text-primary">
+                                    <i data-lucide="building"></i>
+                                </div>
+                                <div class="tab-header-text">
+                                    <h3>Other Specialties</h3>
+                                    <span class="subtitle">Program Highlights</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="program-highlight-list">
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Custom limits based on procedure types</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>(Near) 100% approval rate*</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Multiple lender matching</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Soft inquiry only</span></li>
+                                <li><i data-lucide="check-circle-2" class="text-primary"></i> <span>Payout released next 1–2 business days</span></li>
+                            </ul>
+                            
+                            <div class="tab-footer-note">
+                                *Active SSN or Tax ID required. No active bankruptcies.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section py-20 bg-dark text-center text-white">
+            <div class="container max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Ready to stop losing revenue at the financing step?</h2>
+                <p class="text-lg opacity-80 mb-10">Offer 100% patient financing and get paid upfront. Call us at <strong>469-430-2427</strong> or apply online to get started today.</p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <button class="btn btn-primary btn-large" onclick="window.openModal()">Apply Online</button>
+                    <a href="tel:469-430-2427" class="btn btn-outline-white btn-large"><i data-lucide="phone" class="inline-icon"></i> Call Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo text-green-500 text-2xl font-bold">Paynance</a>
+                <p class="mt-4 opacity-70">The premier healthcare financing brokerage guaranteeing near 100% patient approvals so you can focus on care.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4>Company</h4>
+                <a href="#about">About Us</a>
+                <a href="#programs">Programs</a>
+                <a href="#industries">Industries</a>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Compliance</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i data-lucide="mail" class="inline-icon"></i> info@mypaynance.com</p>
+                <p><i data-lucide="phone" class="inline-icon"></i> (469) 430-2427</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Paynance. All rights reserved. (Demo Clone)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lead Capture Modal -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Get Started</h2>
+                <button class="close-btn" id="closeModalBtn"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-6 opacity-80">Drop your details below and a financing specialist will contact you shortly to establish your practice account.</p>
+                <form id="leadForm" class="lead-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Dr. John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="practice">Practice Name</label>
+                        <input type="text" id="practice" placeholder="Sunrise Dental" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="contact@sunrisedental.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large w-full mt-4">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize Icons & Load Scripts -->
+    <script>
+      lucide.createIcons();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
