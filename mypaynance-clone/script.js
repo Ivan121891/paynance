@@ -95,47 +95,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === Modal Logic ===
-    const modal = document.getElementById('contactModal');
-    const closeBtn = document.getElementById('closeModalBtn');
-    const leadForm = document.getElementById('leadForm');
+    // === Inline Form & CTA Logic ===
+    const inlineLeadForm = document.getElementById('inlineLeadForm');
 
     // Attach to global window object so onclick handlers in HTML can use it
     window.openModal = function() {
-        modal.classList.add('open');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-    };
-
-    window.closeModal = function() {
-        modal.classList.remove('open');
-        document.body.style.overflow = '';
-    };
-
-    closeBtn.addEventListener('click', window.closeModal);
-    
-    // Close modal if user clicks outside of modal content
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            window.closeModal();
+        const getStartedSection = document.getElementById('get-started');
+        if(getStartedSection) {
+            // Get slightly offset to not hide the title under the sticky nav
+            const offsetTop = getStartedSection.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
         }
-    });
+    };
 
     // Form Submission Handler
-    leadForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Mock processing state
-        const submitBtn = leadForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Submitting...';
-        submitBtn.disabled = true;
+    if (inlineLeadForm) {
+        inlineLeadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Mock processing state
+            const submitBtn = inlineLeadForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Submitting...';
+            submitBtn.disabled = true;
 
-        setTimeout(() => {
-            alert('Demo Mode: Thank you! A financing specialist will contact you shortly.');
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            leadForm.reset();
-            window.closeModal();
-        }, 1000);
-    });
+            setTimeout(() => {
+                alert('Demo Mode: Thank you! A financing specialist will contact you shortly.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                lucide.createIcons();
+                inlineLeadForm.reset();
+            }, 1000);
+        });
+    }
 });

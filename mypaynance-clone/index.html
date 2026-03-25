@@ -326,85 +326,160 @@
             </div>
         </section>
 
-        <!-- Final CTA Section -->
-        <section class="cta-section py-20 bg-dark text-center text-white">
-            <div class="container max-w-3xl mx-auto">
-                <h2 class="text-4xl font-bold mb-6">Ready to stop losing revenue at the financing step?</h2>
-                <p class="text-lg opacity-80 mb-10">Offer 100% patient financing and get paid upfront. Call us at <strong>469-430-2427</strong> or apply online to get started today.</p>
-                <div class="flex justify-center gap-4 flex-wrap">
-                    <button class="btn btn-primary btn-large" onclick="window.openModal()">Apply Online</button>
-                    <a href="tel:469-430-2427" class="btn btn-outline-white btn-large"><i data-lucide="phone" class="inline-icon"></i> Call Now</a>
+        <!-- Access Programs Section -->
+        <section class="py-24" style="background-color: #f8fafc;">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row" style="gap: 4rem; align-items: center;">
+                
+                <div class="lg-w-2-5" style="padding-right: 2rem;">
+                    <h2 class="font-bold mb-5" style="line-height: 1.2; color: #1e293b; font-size: 2.5rem; letter-spacing: -0.02em;">
+                        Access Programs Most Clinics <br><span class="text-primary">Don't Have</span>
+                    </h2>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; padding-right: 1rem;">
+                        We are a financing brokerage with structured lender relationships designed to improve approval coverage and reduce patient declines.
+                    </p>
                 </div>
+                
+                <div class="lg-w-3-5 w-full flex flex-col" style="gap: 1.25rem; padding-left: 1rem;">
+                    <div class="feature-card-horizontal">
+                        <div class="icon-wrapper"><i data-lucide="layers"></i></div>
+                        <span class="feature-text">Multi-tier approval structure</span>
+                    </div>
+                    <div class="feature-card-horizontal">
+                        <div class="icon-wrapper"><i data-lucide="banknote"></i></div>
+                        <span class="feature-text">Guaranteed minimum funding programs</span>
+                    </div>
+                    <div class="feature-card-horizontal">
+                        <div class="icon-wrapper"><i data-lucide="search"></i></div>
+                        <span class="feature-text">Soft inquiry only</span>
+                    </div>
+                    <div class="feature-card-horizontal">
+                        <div class="icon-wrapper"><i data-lucide="shield"></i></div>
+                        <span class="feature-text">Structured payout system</span>
+                    </div>
+                    <div class="feature-card-horizontal">
+                        <div class="icon-wrapper"><i data-lucide="stethoscope"></i></div>
+                        <span class="feature-text">Designed for healthcare practices</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-gradient-section text-center text-white" style="padding: 8rem 0;">
+            <div class="container max-w-4xl mx-auto flex flex-col items-center">
+                <h2 class="font-bold mb-4" style="font-size: 2.5rem; line-height: 1.3; letter-spacing: -0.01em;">
+                    Stop Losing Revenue at the Financing <br> Step.
+                </h2>
+                <p class="mb-10" style="font-size: 1.05rem; opacity: 0.95;">
+                    Let's structure your approval system the right way.
+                </p>
+                <button class="btn btn-white" style="padding: 1.125rem 4.25rem; border-radius: 16px; font-weight: 500; font-size: 1.125rem; box-shadow: none;" onclick="window.openModal()">Get Started</button>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <a href="#" class="logo text-green-500 text-2xl font-bold">Paynance</a>
-                <p class="mt-4 opacity-70">The premier healthcare financing brokerage guaranteeing near 100% patient approvals so you can focus on care.</p>
-            </div>
-            
-            <div class="footer-links-group">
-                <h4>Company</h4>
-                <a href="#about">About Us</a>
-                <a href="#programs">Programs</a>
-                <a href="#industries">Industries</a>
-            </div>
-            
-            <div class="footer-links-group">
-                <h4>Legal</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Compliance</a>
+    <!-- Get Started Form Section -->
+    <section id="get-started" class="py-20 bg-light-blue">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-dark mb-4">Get Started</h2>
+                <p class="text-lg opacity-80 text-body mb-4">Let's discuss the best financing program for your practice</p>
+                <div class="font-bold text-dark text-lg">
+                    Call us: <a href="tel:4694302427" class="text-primary hover-underline">469-430-2427</a>
+                </div>
             </div>
 
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p><i data-lucide="mail" class="inline-icon"></i> info@mypaynance.com</p>
-                <p><i data-lucide="phone" class="inline-icon"></i> (469) 430-2427</p>
+            <div class="form-card-wrapper">
+                <div class="form-card layout-flush">
+                    <form id="inlineLeadForm" class="contact-form">
+                        <div class="form-card-body">
+                            <h3 class="form-title">Tell us about your company</h3>
+                            
+                            <div class="form-group">
+                                <label for="companyName">Company legal name *</label>
+                                <input type="text" id="companyName" placeholder="Company name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="businessType">Type of business *</label>
+                                <select id="businessType" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="medical-spa">Medical Spa</option>
+                                    <option value="chiropractor">Chiropractor</option>
+                                    <option value="dentist">Dentist</option>
+                                    <option value="orthodontist">Orthodontist</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="yearsInBusiness">How many years in business? *</label>
+                                <input type="text" id="yearsInBusiness" placeholder="example: 2 years" required>
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="website">Website *</label>
+                                <input type="url" id="website" placeholder="Web URL goes here" required>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit-form-flush">
+                            <i data-lucide="arrow-right" style="width: 20px; height: 20px; stroke-width: 2px;"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Paynance. All rights reserved. (Demo Clone)</p>
+    </section>
+
+    <!-- New Deep Slate Footer -->
+    <footer class="footer-modern py-16">
+        <div class="container max-w-6xl mx-auto px-4">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-brand-col">
+                    <div class="footer-logo mb-6">Paynance</div>
+                    <p class="footer-desc mb-6">Making healthcare accessible through flexible patient financing.</p>
+                    <a href="tel:4694302427" class="footer-phone"><i data-lucide="phone" class="inline-icon-sm"></i> 469-430-2427</a>
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="footer-links-col">
+                    <h4 class="mb-6">Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-links-col">
+                    <h4 class="mb-6">Industries</h4>
+                    <ul>
+                        <li><a href="#medspas">Medical Spas</a></li>
+                        <li><a href="#chiropractors">Chiropractors</a></li>
+                        <li><a href="#dentists">Dentists</a></li>
+                        <li><a href="#orthodontists">Orthodontists</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-links-col">
+                    <h4 class="mb-6">Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar mt-8 pt-8 border-t border-white-10 flex text-xs opacity-60">
+                <p>&copy; 2026 Paynance. All rights reserved.All approvals subject to credit profile and eligibility requirements.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Lead Capture Modal -->
-    <div id="contactModal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Get Started</h2>
-                <button class="close-btn" id="closeModalBtn"><i data-lucide="x"></i></button>
-            </div>
-            <div class="modal-body">
-                <p class="mb-6 opacity-80">Drop your details below and a financing specialist will contact you shortly to establish your practice account.</p>
-                <form id="leadForm" class="lead-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Dr. John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="practice">Practice Name</label>
-                        <input type="text" id="practice" placeholder="Sunrise Dental" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="contact@sunrisedental.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="(123) 456-7890" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-large w-full mt-4">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Initialize Icons & Load Scripts -->
     <script>

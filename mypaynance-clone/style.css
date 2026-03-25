@@ -824,6 +824,236 @@ img, svg, i {
 }
 
 /* =========================================
+   NEW SECTIONS (ACCESS PROGRAMS & GRADIENT CTA)
+========================================= */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.lg-flex-row { flex-direction: column; display: flex; }
+.lg-w-1-2 { width: 100%; }
+.lg-w-2-5 { width: 100%; }
+.lg-w-3-5 { width: 100%; }
+
+@media (min-width: 1024px) {
+    .lg-flex-row { flex-direction: row; display: flex; }
+    .lg-w-1-2 { width: 50%; }
+    .lg-w-2-5 { width: 40%; }
+    .lg-w-3-5 { width: 60%; }
+}
+
+.feature-card-horizontal {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 0.875rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.feature-card-horizontal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+.feature-card-horizontal .icon-wrapper {
+    background-color: #f0fdf4;
+    color: var(--primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.feature-card-horizontal .icon-wrapper svg, .feature-card-horizontal .icon-wrapper i {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.5px;
+}
+.feature-card-horizontal .feature-text {
+    font-weight: 500;
+    color: #334155;
+    font-size: 0.9375rem;
+}
+.cta-gradient-section {
+    background: linear-gradient(90deg, #0284c7 0%, #10b981 100%);
+    padding: 6rem 0;
+}
+.btn-white {
+    background: var(--white);
+    color: #1e293b;
+    border: none;
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+}
+.btn-white:hover {
+    background: #f8fafc;
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   FORM CARD SECTION
+========================================= */
+.form-card-wrapper {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.form-card.layout-flush {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px -5px rgba(0,0,0,0.08); /* deeper soft drop shadow */
+  padding: 0; /* flush */
+  border: none;
+  overflow: hidden;
+}
+.form-card-body {
+  padding: 3rem 4rem 2rem 4rem;
+}
+.form-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+.contact-form {
+  text-align: left;
+}
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+.contact-form input, .contact-form select {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: var(--white);
+  font-family: inherit;
+  font-size: 1rem;
+  color: #000000;
+  transition: all 0.2s;
+  appearance: none;
+}
+.contact-form input::placeholder {
+  color: #94a3b8;
+}
+.contact-form input:focus, .contact-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+.contact-form select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath fill='%2394a3b8' d='M5 8l5 5 5-5H5z'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25em 1.25em;
+  padding-right: 2.5rem;
+}
+.btn-submit-form-flush {
+  width: 100%;
+  height: 4rem;
+  background-color: #006fee;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-submit-form-flush:hover {
+  background-color: #005bc4;
+}
+.btn-submit-form-flush:active {
+  background-color: #004ba3;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   MODERN FOOTER
+========================================= */
+.footer-modern {
+  background-color: #1e293b;
+  color: #ffffff;
+  margin-top: 6rem;
+  padding: 2.5rem 0 1.5rem 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.footer-desc {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+.footer-phone {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+  font-size: 0.9375rem;
+}
+.footer-phone:hover {
+  color: #ffffff;
+}
+.inline-icon-sm {
+  width: 1rem;
+  height: 1rem;
+}
+.footer-links-col h4 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.footer-links-col ul {
+  list-style: none;
+}
+.footer-links-col ul li {
+  margin-bottom: 1rem;
+}
+.footer-links-col a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.2s;
+  font-size: 0.9375rem;
+}
+.footer-links-col a:hover {
+  color: #ffffff;
+}
+.border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.md-flex-row { flex-direction: column; }
+.md-mt-0 { margin-top: 1rem; }
+@media (min-width: 768px) {
+  .md-flex-row { flex-direction: row; }
+  .md-mt-0 { margin-top: 0; }
+}
+
+/* =========================================
    RESPONSIVE
 ========================================= */
 @media (max-width: 1024px) {
