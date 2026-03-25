@@ -131,4 +131,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         });
     }
+    // === Paynance Phone Plans Selection ===
+    const cpPlanCards = document.querySelectorAll('.cp-plan-card');
+    cpPlanCards.forEach(card => {
+        card.addEventListener('click', () => {
+            cpPlanCards.forEach(c => {
+                c.classList.remove('active');
+                const radio = c.querySelector('.cp-plan-radio');
+                if (radio) radio.classList.add('empty');
+            });
+            card.classList.add('active');
+            const radio = card.querySelector('.cp-plan-radio');
+            if (radio) radio.classList.remove('empty');
+        });
+    });
+
+    // === Paynance Features Accordion ===
+    const cpFeatures = document.querySelectorAll('.cp-feature-item');
+    cpFeatures.forEach(feature => {
+        feature.addEventListener('click', () => {
+            cpFeatures.forEach(f => f.classList.remove('active'));
+            feature.classList.add('active');
+        });
+    });
 });
