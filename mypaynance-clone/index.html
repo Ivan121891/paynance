@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paynance - Get paid next day with 100% patient approval guaranteed. Patient financing for healthcare providers.">
-    <title>Paynance - Healthcare Financing Brokerage | Near 100% Approval</title>
+    <meta name="description" content="US Healthcare Finance - Get paid next day with 100% patient approval guaranteed. Patient financing for healthcare providers.">
+    <title>US Healthcare Finance - Healthcare Financing Brokerage | Near 100% Approval</title>
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,12 @@
     <!-- Sticky Navigation Area -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Paynance</a>
+            <a href="#" class="logo">US Healthcare Finance</a>
             <nav class="nav-links">
                 <a href="#home" class="nav-item">Home</a>
-                <a href="#programs" class="nav-item">Programs</a>
-                <a href="#how-it-works" class="nav-item">How It Works</a>
-                <a href="#industries" class="nav-item">Industries</a>
+                <a href="#features" class="nav-item">Features</a>
+                <a href="#programs" class="nav-item">Network</a>
+                <a href="#how-it-works" class="nav-item">Process</a>
             </nav>
             <div class="nav-actions">
                 <button class="btn btn-primary" onclick="window.openModal()">Get Started</button>
@@ -37,64 +37,205 @@
         <!-- Mobile Dropdown -->
         <div class="mobile-nav" id="mobileNav">
             <a href="#home" class="nav-item">Home</a>
-            <a href="#programs" class="nav-item">Programs</a>
-            <a href="#how-it-works" class="nav-item">How It Works</a>
-            <a href="#industries" class="nav-item">Industries</a>
+            <a href="#features" class="nav-item">Features</a>
+            <a href="#programs" class="nav-item">Network</a>
+            <a href="#how-it-works" class="nav-item">Process</a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section Section -->
-        <section id="home" class="hero-section">
+        <!-- US Healthcare Finance Hero Section -->
+        <section id="home" class="cp-hero-section">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 2rem;">
+                <!-- Left Text Content -->
+                <div class="lg-w-1-2 cp-hero-text">
+                    <h1 class="cp-title">Patient-centric payments <br><span class="cp-title-bold">built for the modern clinic</span></h1>
+                    <p class="cp-desc">Deliver an exceptional experience with flexible, transparent terms that turn single treatments into lifelong patient relationships.</p>
+                    <button class="btn-cp-blue shadow-sm" style="box-shadow: 0 4px 12px rgba(0,111,238,0.2);">Make A Payment</button>
+                </div>
+
+                <!-- Right Phone Graphic -->
+                <div class="lg-w-1-2 flex justify-center cp-hero-graphic" style="position: relative; z-index: 10;">
+                    <!-- CSS Phone Mockup -->
+                    <div class="css-phone-wrapper">
+                        <div class="css-phone-bezel">
+                            <div class="css-phone-screen">
+                                <!-- Phone UI Header -->
+                                <div class="cp-phone-header">
+                                    <div class="cp-phone-logo">
+                                        <i data-lucide="aperture" style="color: var(--primary); width: 1.25rem; height: 1.25rem; stroke-width: 2.5px;"></i> US Healthcare Finance
+                                    </div>
+                                    <h3 class="cp-phone-title">Customized Financing for your <br><span class="text-cp-blue">$5,000.00</span> treatment</h3>
+                                </div>
+                                
+                                <!-- AutoPay Checkbox -->
+                                <div class="cp-phone-autopay">
+                                    <div class="checkbox-checked"><i data-lucide="check" style="width: 12px; height: 12px; stroke-width: 3px;"></i></div>
+                                    <p>Enroll in AutoPay and get a <span class="text-cp-blue font-bold">0.5%</span> discount on the loan interest.</p>
+                                </div>
+
+                                <!-- Plans List -->
+                                <div class="cp-phone-plans">
+                                    <div class="cp-plan-card active">
+                                        <div class="cp-plan-header">
+                                            <div class="cp-plan-radio"><div class="dot"></div></div>
+                                            <span class="cp-plan-price">$416.67<span class="small">/month</span></span>
+                                            <span class="cp-plan-months">12 months</span>
+                                            <i data-lucide="chevron-up" class="cp-plan-chevron"></i>
+                                        </div>
+                                        <div class="cp-plan-details">
+                                            <div>
+                                                <div class="label">Total Amount</div>
+                                                <div class="value">$5,000.00</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="label">APR*</div>
+                                                <div class="value text-cp-blue">0%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cp-plan-card">
+                                        <div class="cp-plan-header">
+                                            <div class="cp-plan-radio empty"></div>
+                                            <span class="cp-plan-price">$230.70<span class="small">/month</span></span>
+                                            <span class="cp-plan-months">24 months</span>
+                                            <i data-lucide="chevron-down" class="cp-plan-chevron"></i>
+                                        </div>
+                                        <div class="cp-plan-details">
+                                            <div>
+                                                <div class="label">Total Amount</div>
+                                                <div class="value">$5,536.80</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="label">APR*</div>
+                                                <div class="value text-cp-blue border-b-blue">9.99%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cp-plan-card">
+                                        <div class="cp-plan-header">
+                                            <div class="cp-plan-radio empty"></div>
+                                            <span class="cp-plan-price">$185.79<span class="small">/month</span></span>
+                                            <span class="cp-plan-months">36 months</span>
+                                            <i data-lucide="chevron-down" class="cp-plan-chevron"></i>
+                                        </div>
+                                        <div class="cp-plan-details">
+                                            <div>
+                                                <div class="label">Total Amount</div>
+                                                <div class="value">$6,688.44</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="label">APR*</div>
+                                                <div class="value text-cp-blue border-b-blue">19.99%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="cp-phone-btn">Continue</button>
+                                <p class="cp-phone-footer">Your approved patient funding limit is $10,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- US Healthcare Finance Partners Bar -->
+        <section class="cp-partners-bar">
+            <div class="cp-partners-wrapper">
+                <div class="cp-partners-track">
+                    <!-- First Set -->
+                    <div class="cp-partner-item">
+                        <div class="flex" style="color: #006fee; gap: 2px; margin-bottom: 4px;">
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                        </div>
+                        <div class="cp-partner-subtitle text-xs" style="color: white; white-space: nowrap;">5 Stars on Google Reviews</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue flex items-center mb-1"><i data-lucide="stethoscope" style="width: 14px; height: 14px; margin-right: 4px;"></i> MedSpa Customer</div>
+                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">"Helpful with best options."</div>
+                    </div>
+
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo" style="white-space: nowrap;">CLUB WYNDHAM</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">+91</div>
+                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">Net Promoter Score</div>
+                    </div>
+
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo serif" style="white-space: nowrap;">LaserAway</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo flex items-center" style="white-space: nowrap;"><i data-lucide="shield-check" style="margin-right: 6px;"></i> SafeStreets</div>
+                    </div>
+
+                    <!-- Duplicated Set for Loop -->
+                    <div class="cp-partner-item">
+                        <div class="flex" style="color: #006fee; gap: 2px; margin-bottom: 4px;">
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
+                        </div>
+                        <div class="cp-partner-subtitle text-xs" style="color: white; white-space: nowrap;">5 Stars on Google Reviews</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue flex items-center mb-1"><i data-lucide="stethoscope" style="width: 14px; height: 14px; margin-right: 4px;"></i> MedSpa Customer</div>
+                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">"Helpful with best options."</div>
+                    </div>
+
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo" style="white-space: nowrap;">CLUB WYNDHAM</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">+91</div>
+                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">Net Promoter Score</div>
+                    </div>
+
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo serif" style="white-space: nowrap;">LaserAway</div>
+                    </div>
+                    
+                    <div class="cp-partner-item">
+                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
+                        <div class="cp-partner-logo flex items-center" style="white-space: nowrap;"><i data-lucide="shield-check" style="margin-right: 6px;"></i> SafeStreets</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legacy Hero (Now Network) -->
+        <section id="network" class="hero-section" style="padding: 6rem 0;">
             <div class="hero-bg-accent"></div>
             <div class="container hero-container">
-                
                 <div class="hero-content">
                     <div class="hero-badge">Near 100% Approval</div>
                     <h1>Scaling Your Practice Through <br><span class="highlight">Higher Patient Approvals</span></h1>
-                    <p class="hero-subtitle">Don't let price prevent life-changing treatments. Paynance offers multi-tiered financing options to help every patient access the care they need, instantly.</p>
-                    <ul class="hero-features">
-                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Simple 60-second mobile application</span></li>
-                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Soft credit inquiry only (no credit hit)</span></li>
-                        <li><i data-lucide="check-circle-2" class="icon-green"></i> <span>Funding directly to you in 1-2 days</span></li>
-                    </ul>
-                    <div class="hero-cta-group">
-                        <button class="btn btn-primary btn-large" onclick="window.openModal()">Get Started Today</button>
-                        <a href="#how-it-works" class="btn btn-outline btn-large">Learn More</a>
-                    </div>
+                    <p class="hero-subtitle">US Healthcare Finance acts as a brokerage, pairing your patients with multiple lenders without multiple hits to their credit.</p>
                 </div>
-
                 <div class="hero-visual">
-                    <!-- Cloned Visual Cards -->
-                    <div class="payment-card slide-in-up delay-1">
-                        <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
-                        <div class="payment-info">
-                            <span class="label">Patient pays</span>
-                            <span class="amount">$150<span class="sub">/mo</span></span>
-                        </div>
-                        <i data-lucide="arrow-right" class="arrow-icon"></i>
-                        <div class="receive-info text-right">
-                            <span class="label">Practice receives</span>
-                            <span class="receive-amount">$3,000</span>
-                            <span class="sub-label">upfront</span>
-                        </div>
-                    </div>
-                    
-                    <div class="payment-card slide-in-up delay-2">
-                        <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
-                        <div class="payment-info">
-                            <span class="label">Patient pays</span>
-                            <span class="amount">$199<span class="sub">/mo</span></span>
-                        </div>
-                        <i data-lucide="arrow-right" class="arrow-icon"></i>
-                        <div class="receive-info text-right">
-                            <span class="label">Practice receives</span>
-                            <span class="receive-amount">$4,000</span>
-                            <span class="sub-label">upfront</span>
-                        </div>
-                    </div>
-
-                    <div class="payment-card slide-in-up delay-3">
+                    <!-- Icons shown via payment examples -->
+                    <div class="payment-card">
                         <div class="icon-bubble"><i data-lucide="dollar-sign"></i></div>
                         <div class="payment-info">
                             <span class="label">Patient pays</span>
@@ -107,18 +248,66 @@
                             <span class="sub-label">upfront</span>
                         </div>
                     </div>
-                    <p class="disclaimer text-center">Payment examples for illustration purposes only.</p>
                 </div>
-
             </div>
         </section>
 
-        <!-- Programs Highlight -->
-        <section id="programs" class="py-20 bg-white">
+        <!-- US Healthcare Finance Features Section -->
+        <section id="features" class="bg-white" style="padding: 9rem 0 6rem 0;">
+            <div class="container max-w-5xl mx-auto flex flex-col items-center">
+                <div class="text-center mb-16 px-4">
+                    <h2 class="cp-title-alt mb-6">Better Rates, Faster Payouts, Total Clarity</h2>
+                    <p class="cp-desc-center">From instant pre-approvals to 7-day live support, we've built the ultimate financing toolkit designed to help healthcare practices thrive.</p>
+                </div>
+
+                <div class="flex flex-col lg-flex-row w-full items-center" style="gap: 4rem;">
+                    <!-- Left Graphic: Pre-Approval Card -->
+                    <div class="lg-w-1-2 cp-slider-graphic-wrapper">
+                        <div class="cp-slider-card shadow-lg">
+                            <h4 class="cp-slider-title mb-8">Get Instant Pre-Approval</h4>
+                            <div class="cp-slider-track-container">
+                                <div class="cp-slider-track"></div>
+                                <div class="cp-slider-fill" style="width: 70%;"></div>
+                                <div class="cp-slider-handle" style="left: 0%;"></div>
+                                <div class="cp-slider-handle" style="left: 70%;"></div>
+                            </div>
+                            <div class="cp-slider-labels text-sm font-bold flex justify-between mt-4">
+                                <span>$0</span>
+                                <span>$2,000</span>
+                                <span>$4,000</span>
+                                <span>$6,000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Features Accordion -->
+                    <div class="lg-w-1-2 flex flex-col w-full" style="gap: 1rem; padding-right: 1rem;">
+                        <div class="cp-feature-item active">
+                            <h4 class="cp-feature-header">Real-Time Offers with Zero Credit Risk</h4>
+                            <p class="cp-feature-body">Empower your patients with instant pre-approvals using soft-credit inquiries that never impact their scores.**</p>
+                        </div>
+                        <div class="cp-feature-item">
+                            <h4 class="cp-feature-header">Radical Transparency in Every Plan</h4>
+                        </div>
+                        <div class="cp-feature-item">
+                            <h4 class="cp-feature-header">Smart Automation for Stress-Free Repayment</h4>
+                        </div>
+                        <div class="cp-feature-item">
+                            <h4 class="cp-feature-header">Next-Gen Patient Loyalty Tools</h4>
+                        </div>
+                        <div class="cp-feature-item">
+                            <h4 class="cp-feature-header">Premium Concierge Support</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Highlight (Lenders Grid) -->
+        <section id="programs" class="py-20 bg-light-blue" style="border-top: 1px solid rgba(0,0,0,0.05);">
             <div class="container text-center max-w-4xl mx-auto">
                 <h2 class="section-title">A Network of Lenders in One Platform</h2>
                 <p class="section-subtitle">We act as a brokerage, pairing your patients with multiple lenders without multiple hits to their credit.</p>
-                <!-- Visual logos mocked as text or icon bubbles -->
                 <div class="lenders-grid mt-10">
                     <div class="lender-box">Tier 1 Prime<br><span class="text-sm opacity-70">0% Interest Options</span></div>
                     <div class="lender-box">Tier 2 Near-Prime<br><span class="text-sm opacity-70">Extended Terms</span></div>
@@ -128,40 +317,111 @@
             </div>
         </section>
 
-        <!-- Steps Section (How It Works) -->
-        <section id="how-it-works" class="py-20 bg-light-blue">
+        <!-- Avvance US Bank Section -->
+        <section class="avvance-section">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 4rem;">
+                <div class="lg-w-1-2 flex justify-center" style="position: relative;">
+                    <div class="avvance-glow avvance-glow-blue"></div>
+                    <div class="avvance-glow avvance-glow-green"></div>
+                    <div class="css-phone-wrapper avvance-phone">
+                        <div class="css-phone-bezel">
+                            <div class="css-phone-screen" style="padding: 0;">
+                                <div style="padding: 2.5rem 1.25rem 1rem 1.25rem;">
+                                    <h3 class="avvance-phone-title">You're approved!</h3>
+                                    <p class="avvance-phone-subtitle">Choose the Avvance installment loan that works best for you. Terms may change if you leave the application.</p>
+                                    <div class="flex justify-between" style="margin-top: 1.5rem; margin-bottom: 0.75rem;">
+                                        <div class="avvance-label">Merchant:</div>
+                                        <div class="font-bold text-right" style="color: #0d2c54; font-size: 0.75rem;">John Dela Cruz</div>
+                                    </div>
+                                    <div class="flex justify-between pb-4" style="border-bottom: 1px solid #e2e8f0;">
+                                        <div class="avvance-label">Invoice amount:</div>
+                                        <div class="font-bold text-right" style="color: #0d2c54; font-size: 0.75rem;">$6,200.00</div>
+                                    </div>
+                                </div>
+                                <div style="padding: 0 1.25rem 2rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div class="avvance-card">
+                                        <div class="font-bold mb-2" style="color: #0d2c54; font-size: 0.85rem;">$172.22 <span class="font-normal" style="font-size: 0.7rem; color: #64748b;">per month for 36 months</span></div>
+                                        <div class="flex justify-between text-xs mb-3">
+                                            <div>
+                                                <div class="avvance-label">APR</div>
+                                                <div class="avvance-val font-bold">0%</div>
+                                            </div>
+                                            <div>
+                                                <div class="avvance-label">Interest</div>
+                                                <div class="avvance-val font-bold">$0.00</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="avvance-label">Total</div>
+                                                <div class="avvance-val font-bold text-cp-blue" style="color: #1d4ed8;">$6,200.00</div>
+                                            </div>
+                                        </div>
+                                        <button class="avvance-btn">Choose this loan</button>
+                                    </div>
+                                    <div class="avvance-card">
+                                        <div class="font-bold mb-2" style="color: #0d2c54; font-size: 0.85rem;">$122.74 <span class="font-normal" style="font-size: 0.7rem; color: #64748b;">per month for 60 months</span></div>
+                                        <div class="flex justify-between text-xs mb-3">
+                                            <div><div class="avvance-label">APR</div><div class="avvance-val font-bold">6.99%</div></div>
+                                            <div><div class="avvance-label">Interest</div><div class="avvance-val font-bold">$1,164.29</div></div>
+                                            <div style="text-align: right;"><div class="avvance-label">Total</div><div class="avvance-val font-bold text-cp-blue" style="color: #1d4ed8;">$7,364.29</div></div>
+                                        </div>
+                                        <button class="avvance-btn">Choose this loan</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg-w-1-2" style="padding-left: 2rem;">
+                    <h2 class="avvance-title mb-6">Top Lending Powered by U.S. Bank.</h2>
+                    <p class="avvance-desc mb-6">Leverage the trust of a top-tier financial institution to offer your patients the lowest possible rates and most reliable terms:</p>
+                    <ul class="avvance-list">
+                        <li>Loan options from <strong>$300 - $25,000</strong>.</li>
+                        <li>Repayment terms from <strong>3 to 60 months</strong>.</li>
+                        <li>A fast, secure <strong>mobile-friendly application</strong> process.</li>
+                        <li>Customer repayment and servicing through <strong>U.S. Bank</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Programs Section -->
+        <section style="background-color: var(--light-bg); padding: 6rem 0 6rem 0;">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row" style="gap: 4rem; align-items: center;">
+                <div class="lg-w-2-5" style="padding-right: 2rem;">
+                    <h2 class="font-bold mb-5" style="line-height: 1.2; color: #1e293b; font-size: 2.25rem; letter-spacing: -0.02em;">
+                        Financing Exclusive <br><span class="text-primary">to the Elite</span>
+                    </h2>
+                    <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; padding-right: 1rem;">
+                        Gain access to specialized lender programs and guaranteed funding structures that were previously unavailable to independent clinics.
+                    </p>
+                </div>
+                <div class="lg-w-3-5 w-full flex flex-col" style="gap: 1.25rem; padding-left: 1rem;">
+                    <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="layers"></i></div><span class="feature-text">Multi-tier approval structure</span></div>
+                    <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="banknote"></i></div><span class="feature-text">Guaranteed minimum funding programs</span></div>
+                    <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="search"></i></div><span class="feature-text">Soft inquiry only</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works (Steps) -->
+        <section id="how-it-works" class="py-20 bg-white">
             <div class="container">
                 <div class="text-center max-w-2xl mx-auto mb-16">
-                    <h2 class="section-title">The Paynance Flow: Simple. Fast. Seamless.</h2>
+                    <h2 class="section-title">The US Healthcare Finance Flow: Simple. Fast. Seamless.</h2>
                     <p class="section-subtitle">Our frictionless platform integrates directly into your practice, allowing for real-time approvals without slowing down your consultations.</p>
                 </div>
-                
                 <div class="steps-grid">
                     <div class="step-card">
-                        <div class="step-icon-wrapper">
-                            <div class="step-icon"><i data-lucide="smartphone"></i></div>
-                            <div class="step-number">1</div>
-                        </div>
-                        <h3>Patients Apply</h3>
-                        <p>60-second mobile application.</p>
+                        <div class="step-icon-wrapper"><div class="step-icon"><i data-lucide="smartphone"></i></div><div class="step-number">1</div></div>
+                        <h3>Patients Apply</h3><p>60-second mobile application.</p>
                     </div>
-                    
                     <div class="step-card">
-                        <div class="step-icon-wrapper">
-                            <div class="step-icon"><i data-lucide="thumbs-up"></i></div>
-                            <div class="step-number">2</div>
-                        </div>
-                        <h3>We Approve</h3>
-                        <p>Near 100% coverage.</p>
+                        <div class="step-icon-wrapper"><div class="step-icon"><i data-lucide="thumbs-up"></i></div><div class="step-number">2</div></div>
+                        <h3>We Approve</h3><p>Near 100% coverage.</p>
                     </div>
-                    
                     <div class="step-card">
-                        <div class="step-icon-wrapper">
-                            <div class="step-icon"><i data-lucide="banknote"></i></div>
-                            <div class="step-number">3</div>
-                        </div>
-                        <h3>You Get Paid</h3>
-                        <p>Funds within 1-2 business days.</p>
+                        <div class="step-icon-wrapper"><div class="step-icon"><i data-lucide="banknote"></i></div><div class="step-number">3</div></div>
+                        <h3>You Get Paid</h3><p>Funds within 1-2 business days.</p>
                     </div>
                 </div>
             </div>
@@ -326,378 +586,23 @@
             </div>
         </section>
 
-        <!-- Paynance Hero Section -->
-        <section class="cp-hero-section">
-            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 2rem;">
-                <!-- Left Text Content -->
-                <div class="lg-w-1-2 cp-hero-text">
-                    <h1 class="cp-title">Patient-centric payments <br><span class="cp-title-bold">built for the modern clinic</span></h1>
-                    <p class="cp-desc">Deliver an exceptional experience with flexible, transparent terms that turn single treatments into lifelong patient relationships.</p>
-                    <button class="btn-cp-blue shadow-sm" style="box-shadow: 0 4px 12px rgba(0,111,238,0.2);">Make A Payment</button>
-                </div>
 
-                <!-- Right Phone Graphic -->
-                <div class="lg-w-1-2 flex justify-center cp-hero-graphic" style="position: relative; z-index: 10;">
-                    <!-- CSS Phone Mockup -->
-                    <div class="css-phone-wrapper">
-                        <div class="css-phone-bezel">
-                            <div class="css-phone-screen">
-                                <!-- Phone UI Header -->
-                                <div class="cp-phone-header">
-                                    <div class="cp-phone-logo">
-                                        <i data-lucide="aperture" style="color: var(--primary); width: 1.25rem; height: 1.25rem; stroke-width: 2.5px;"></i> Paynance
-                                    </div>
-                                    <h3 class="cp-phone-title">Customized Financing for your <br><span class="text-cp-blue">$5,000.00</span> treatment</h3>
-                                </div>
-                                
-                                <!-- AutoPay Checkbox -->
-                                <div class="cp-phone-autopay">
-                                    <div class="checkbox-checked"><i data-lucide="check" style="width: 12px; height: 12px; stroke-width: 3px;"></i></div>
-                                    <p>Enroll in AutoPay and get a <span class="text-cp-blue font-bold">0.5%</span> discount on the loan interest.</p>
-                                </div>
 
-                                <!-- Plans List -->
-                                <div class="cp-phone-plans">
-                                    <div class="cp-plan-card active">
-                                        <div class="cp-plan-header">
-                                            <div class="cp-plan-radio"><div class="dot"></div></div>
-                                            <span class="cp-plan-price">$416.67<span class="small">/month</span></span>
-                                            <span class="cp-plan-months">12 months</span>
-                                            <i data-lucide="chevron-up" class="cp-plan-chevron"></i>
-                                        </div>
-                                        <div class="cp-plan-details">
-                                            <div>
-                                                <div class="label">Total Amount</div>
-                                                <div class="value">$5,000.00</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="label">APR*</div>
-                                                <div class="value text-cp-blue">0%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cp-plan-card">
-                                        <div class="cp-plan-header">
-                                            <div class="cp-plan-radio empty"></div>
-                                            <span class="cp-plan-price">$230.70<span class="small">/month</span></span>
-                                            <span class="cp-plan-months">24 months</span>
-                                            <i data-lucide="chevron-down" class="cp-plan-chevron"></i>
-                                        </div>
-                                        <div class="cp-plan-details">
-                                            <div>
-                                                <div class="label">Total Amount</div>
-                                                <div class="value">$5,536.80</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="label">APR*</div>
-                                                <div class="value text-cp-blue border-b-blue">9.99%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cp-plan-card">
-                                        <div class="cp-plan-header">
-                                            <div class="cp-plan-radio empty"></div>
-                                            <span class="cp-plan-price">$185.79<span class="small">/month</span></span>
-                                            <span class="cp-plan-months">36 months</span>
-                                            <i data-lucide="chevron-down" class="cp-plan-chevron"></i>
-                                        </div>
-                                        <div class="cp-plan-details">
-                                            <div>
-                                                <div class="label">Total Amount</div>
-                                                <div class="value">$6,688.44</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="label">APR*</div>
-                                                <div class="value text-cp-blue border-b-blue">19.99%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="cp-phone-btn">Continue</button>
-                                <p class="cp-phone-footer">Your approved patient funding limit is $10,000</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Paynance Partners Bar -->
-        <section class="cp-partners-bar">
-            <div class="cp-partners-wrapper">
-                <div class="cp-partners-track">
-                    <!-- First Set -->
-                    <div class="cp-partner-item">
-                        <div class="flex" style="color: #006fee; gap: 2px; margin-bottom: 4px;">
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                        </div>
-                        <div class="cp-partner-subtitle text-xs" style="color: white; white-space: nowrap;">5 Stars on Google Reviews</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue flex items-center mb-1"><i data-lucide="stethoscope" style="width: 14px; height: 14px; margin-right: 4px;"></i> MedSpa Customer</div>
-                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">"Helpful with best options."</div>
-                    </div>
-
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo" style="white-space: nowrap;">CLUB WYNDHAM</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">+91</div>
-                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">Net Promoter Score</div>
-                    </div>
-
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo serif" style="white-space: nowrap;">LaserAway</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo flex items-center" style="white-space: nowrap;"><i data-lucide="shield-check" style="margin-right: 6px;"></i> SafeStreets</div>
-                    </div>
-
-                    <!-- Duplicated Set for Loop -->
-                    <div class="cp-partner-item">
-                        <div class="flex" style="color: #006fee; gap: 2px; margin-bottom: 4px;">
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                            <i data-lucide="star" style="fill: currentColor; width: 14px; height: 14px;"></i>
-                        </div>
-                        <div class="cp-partner-subtitle text-xs" style="color: white; white-space: nowrap;">5 Stars on Google Reviews</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue flex items-center mb-1"><i data-lucide="stethoscope" style="width: 14px; height: 14px; margin-right: 4px;"></i> MedSpa Customer</div>
-                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">"Helpful with best options."</div>
-                    </div>
-
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo" style="white-space: nowrap;">CLUB WYNDHAM</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">+91</div>
-                        <div class="cp-partner-subtitle" style="color: white; white-space: nowrap;">Net Promoter Score</div>
-                    </div>
-
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo serif" style="white-space: nowrap;">LaserAway</div>
-                    </div>
-                    
-                    <div class="cp-partner-item">
-                        <div class="cp-partner-title text-cp-blue mb-1">Proud Partner</div>
-                        <div class="cp-partner-logo flex items-center" style="white-space: nowrap;"><i data-lucide="shield-check" style="margin-right: 6px;"></i> SafeStreets</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Paynance Features Section -->
-        <section class="bg-white" style="padding: 9rem 0 6rem 0;">
-            <div class="container max-w-5xl mx-auto flex flex-col items-center">
-                <div class="text-center mb-16 px-4">
-                    <h2 class="cp-title-alt mb-6">Better Rates, Faster Payouts, Total Clarity</h2>
-                    <p class="cp-desc-center">From instant pre-approvals to 7-day live support, we've built the ultimate financing toolkit designed to help healthcare practices thrive.</p>
-                </div>
-
-                <div class="flex flex-col lg-flex-row w-full items-center" style="gap: 4rem;">
-                    <!-- Left Graphic: Pre-Approval Card -->
-                    <div class="lg-w-1-2 cp-slider-graphic-wrapper">
-                        <div class="cp-slider-card shadow-lg">
-                            <h4 class="cp-slider-title mb-8">Get Instant Pre-Approval</h4>
-                            <div class="cp-slider-track-container">
-                                <div class="cp-slider-track"></div>
-                                <div class="cp-slider-fill" style="width: 70%;"></div>
-                                <div class="cp-slider-handle" style="left: 0%;"></div>
-                                <div class="cp-slider-handle" style="left: 70%;"></div>
-                            </div>
-                            <div class="cp-slider-labels text-sm font-bold flex justify-between mt-4">
-                                <span>$0</span>
-                                <span>$2,000</span>
-                                <span>$4,000</span>
-                                <span>$6,000+</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Features Accordion -->
-                    <div class="lg-w-1-2 flex flex-col w-full" style="gap: 1rem; padding-right: 1rem;">
-                        <div class="cp-feature-item active">
-                            <h4 class="cp-feature-header">Real-Time Offers with Zero Credit Risk</h4>
-                            <p class="cp-feature-body">Empower your patients with instant pre-approvals using soft-credit inquiries that never impact their scores.**</p>
-                        </div>
-                        <div class="cp-feature-item">
-                            <h4 class="cp-feature-header">Radical Transparency in Every Plan</h4>
-                        </div>
-                        <div class="cp-feature-item">
-                            <h4 class="cp-feature-header">Smart Automation for Stress-Free Repayment</h4>
-                        </div>
-                        <div class="cp-feature-item">
-                            <h4 class="cp-feature-header">Next-Gen Patient Loyalty Tools</h4>
-                        </div>
-                        <div class="cp-feature-item">
-                            <h4 class="cp-feature-header">Premium Concierge Support</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Avvance US Bank Section -->
-        <section class="avvance-section">
+        <!-- Network Spotlight (Legacy Hero) -->
+        <section id="network-legacy" class="py-20 bg-light-blue" style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,0.05);">
             <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 4rem;">
-                <!-- Left: Phone Mockup with Glowing Background -->
-                <div class="lg-w-1-2 flex justify-center" style="position: relative;">
-                    <!-- Glowing Backgrounds -->
-                    <div class="avvance-glow avvance-glow-blue"></div>
-                    <div class="avvance-glow avvance-glow-green"></div>
-                    
-                    <!-- CSS Phone -->
-                    <div class="css-phone-wrapper avvance-phone">
-                        <div class="css-phone-bezel">
-                            <div class="css-phone-screen" style="padding: 0;">
-                                <!-- Phone Header -->
-                                <div style="padding: 2.5rem 1.25rem 1rem 1.25rem;">
-                                    <h3 class="avvance-phone-title">You're approved!</h3>
-                                    <p class="avvance-phone-subtitle">Choose the Avvance installment loan that works best for you. Terms may change if you leave the application.</p>
-                                    
-                                    <div class="flex justify-between" style="margin-top: 1.5rem; margin-bottom: 0.75rem;">
-                                        <div class="avvance-label">Merchant:</div>
-                                        <div class="font-bold text-right" style="color: #0d2c54; font-size: 0.75rem;">John Dela Cruz</div>
-                                    </div>
-                                    <div class="flex justify-between pb-4" style="border-bottom: 1px solid #e2e8f0;">
-                                        <div class="avvance-label">Invoice amount:</div>
-                                        <div class="font-bold text-right" style="color: #0d2c54; font-size: 0.75rem;">$6,200.00</div>
-                                    </div>
-                                </div>
-                                
-                                <div style="padding: 0 1.25rem 2rem 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
-                                    <!-- Card 1 -->
-                                    <div class="avvance-card">
-                                        <div class="font-bold mb-2" style="color: #0d2c54; font-size: 0.85rem;">$172.22 <span class="font-normal" style="font-size: 0.7rem; color: #64748b;">per month for 36 months</span></div>
-                                        <div class="flex justify-between text-xs mb-3">
-                                            <div>
-                                                <div class="avvance-label">APR</div>
-                                                <div class="avvance-val font-bold">0%</div>
-                                            </div>
-                                            <div>
-                                                <div class="avvance-label">Interest</div>
-                                                <div class="avvance-val font-bold">$0.00</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="avvance-label">Total</div>
-                                                <div class="avvance-val font-bold text-cp-blue" style="color: #1d4ed8;">$6,200.00</div>
-                                            </div>
-                                        </div>
-                                        <button class="avvance-btn">Choose this loan</button>
-                                    </div>
-
-                                    <!-- Card 2 -->
-                                    <div class="avvance-card">
-                                        <div class="font-bold mb-2" style="color: #0d2c54; font-size: 0.85rem;">$122.74 <span class="font-normal" style="font-size: 0.7rem; color: #64748b;">per month for 60 months</span></div>
-                                        <div class="flex justify-between text-xs mb-3">
-                                            <div>
-                                                <div class="avvance-label">APR</div>
-                                                <div class="avvance-val font-bold">6.99%</div>
-                                            </div>
-                                            <div>
-                                                <div class="avvance-label">Interest</div>
-                                                <div class="avvance-val font-bold">$1,164.29</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="avvance-label">Total</div>
-                                                <div class="avvance-val font-bold text-cp-blue" style="color: #1d4ed8;">$7,364.29</div>
-                                            </div>
-                                        </div>
-                                        <button class="avvance-btn">Choose this loan</button>
-                                    </div>
-
-                                    <!-- Card 3 -->
-                                    <div class="avvance-card">
-                                        <div class="font-bold mb-2" style="color: #0d2c54; font-size: 0.85rem;">$258.33 <span class="font-normal" style="font-size: 0.7rem; color: #64748b;">per month for 24 months</span></div>
-                                        <div class="flex justify-between text-xs mb-3">
-                                            <div>
-                                                <div class="avvance-label">APR</div>
-                                                <div class="avvance-val font-bold">0%</div>
-                                            </div>
-                                            <div>
-                                                <div class="avvance-label">Interest</div>
-                                                <div class="avvance-val font-bold">$0.00</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="avvance-label">Total</div>
-                                                <div class="avvance-val font-bold text-cp-blue" style="color: #1d4ed8;">$6,200.00</div>
-                                            </div>
-                                        </div>
-                                        <button class="avvance-btn">Choose this loan</button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="lg-w-1-2">
+                    <div class="hero-badge">Proven Results</div>
+                    <h2 class="section-title text-left mb-6">Built for Scale. <br>Designed for Trust.</h2>
+                    <p class="section-subtitle text-left">Our platform doesn't just process payments; it optimizes your entire patient financial experience, reducing friction and increasing conversion at every touchpoint.</p>
+                </div>
+                <div class="lg-w-1-2 flex justify-center">
+                    <div class="payment-card">
+                        <div class="icon-bubble"><i data-lucide="check"></i></div>
+                        <div class="payment-info">
+                            <span class="label">Approval Rate</span>
+                            <span class="amount">98.4%</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Right: Content -->
-                <div class="lg-w-1-2" style="padding-left: 2rem;">
-                    <h2 class="avvance-title mb-6">Tier-1 Lending Powered by U.S. Bank.</h2>
-                    <p class="avvance-desc mb-6">Leverage the trust of a top-tier financial institution to offer your patients the lowest possible rates and most reliable terms:</p>
-                    <ul class="avvance-list">
-                        <li>Loan options from <strong>$300 - $25,000</strong>.</li>
-                        <li>Repayment terms from <strong>3 to 60 months</strong>.</li>
-                        <li>A fast, secure <strong>mobile-friendly application</strong> process.</li>
-                        <li>Customer repayment and servicing through the award-winning <strong>U.S. Bank mobile app</strong>.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Access Programs Section -->
-        <section style="background-color: var(--light-bg); padding: 6rem 0 10rem 0;">
-            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row" style="gap: 4rem; align-items: center;">
-                
-                <div class="lg-w-2-5" style="padding-right: 2rem;">
-                    <h2 class="font-bold mb-5" style="line-height: 1.2; color: #1e293b; font-size: 2.5rem; letter-spacing: -0.02em;">
-                        Financing Exclusive <br><span class="text-primary">to the Elite</span>
-                    </h2>
-                    <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; padding-right: 1rem;">
-                        Gain access to specialized lender programs and guaranteed funding structures that were previously unavailable to independent clinics.
-                    </p>
-                </div>
-                
-                <div class="lg-w-3-5 w-full flex flex-col" style="gap: 1.25rem; padding-left: 1rem;">
-                    <div class="feature-card-horizontal">
-                        <div class="icon-wrapper"><i data-lucide="layers"></i></div>
-                        <span class="feature-text">Multi-tier approval structure</span>
-                    </div>
-                    <div class="feature-card-horizontal">
-                        <div class="icon-wrapper"><i data-lucide="banknote"></i></div>
-                        <span class="feature-text">Guaranteed minimum funding programs</span>
-                    </div>
-                    <div class="feature-card-horizontal">
-                        <div class="icon-wrapper"><i data-lucide="search"></i></div>
-                        <span class="feature-text">Soft inquiry only</span>
-                    </div>
-                    <div class="feature-card-horizontal">
-                        <div class="icon-wrapper"><i data-lucide="shield"></i></div>
-                        <span class="feature-text">Structured payout system</span>
-                    </div>
-                    <div class="feature-card-horizontal">
-                        <div class="icon-wrapper"><i data-lucide="stethoscope"></i></div>
-                        <span class="feature-text">Designed for healthcare practices</span>
                     </div>
                 </div>
             </div>
@@ -706,7 +611,7 @@
         <!-- Final CTA Section -->
         <section class="cta-gradient-section text-center text-white" style="padding: 8rem 0;">
             <div class="container max-w-4xl mx-auto flex flex-col items-center">
-                <h2 class="font-bold mb-4" style="font-size: 2.5rem; line-height: 1.3; letter-spacing: -0.01em;">
+                <h2 class="font-bold mb-4" style="font-size: 2.25rem; line-height: 1.3; letter-spacing: -0.01em;">
                     Don't Leave Growth to Chance.
                 </h2>
                 <p class="mb-10" style="font-size: 1.05rem; opacity: 0.95;">
@@ -724,49 +629,30 @@
                 <h2 class="text-4xl font-bold text-dark mb-4">Get Started</h2>
                 <p class="text-lg opacity-80 text-body mb-4">Let's discuss the best financing program for your practice</p>
                 <div class="font-bold text-dark text-lg">
-                    Call us: <a href="tel:4694302427" class="text-primary hover-underline">469-430-2427</a>
+                    Call us: <a href="tel:9496103718" class="text-primary hover-underline">+1 (949) 610-3718</a>
                 </div>
             </div>
 
-            <div class="form-card-wrapper">
-                <div class="form-card layout-flush">
-                    <form id="inlineLeadForm" class="contact-form">
-                        <div class="form-card-body">
-                            <h3 class="form-title">Tell us about your company</h3>
-                            
-                            <div class="form-group">
-                                <label for="companyName">Company legal name *</label>
-                                <input type="text" id="companyName" placeholder="Company name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="businessType">Type of business *</label>
-                                <select id="businessType" required>
-                                    <option value="" disabled selected></option>
-                                    <option value="medical-spa">Medical Spa</option>
-                                    <option value="chiropractor">Chiropractor</option>
-                                    <option value="dentist">Dentist</option>
-                                    <option value="orthodontist">Orthodontist</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="yearsInBusiness">How many years in business? *</label>
-                                <input type="text" id="yearsInBusiness" placeholder="example: 2 years" required>
-                            </div>
-                            
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <label for="website">Website *</label>
-                                <input type="url" id="website" placeholder="Web URL goes here" required>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn-submit-form-flush">
-                            <i data-lucide="arrow-right" style="width: 20px; height: 20px; stroke-width: 2px;"></i>
-                        </button>
-                    </form>
-                </div>
+            <div class="form-card-wrapper" style="max-width: 600px; margin: 0 auto;">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/40RqttXDIxvF3sLYPAIZ"
+                    style="width:100%;height:500px;border:none;border-radius:12px;box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);"
+                    id="inline-40RqttXDIxvF3sLYPAIZ" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Website Form"
+                    data-height="499"
+                    data-layout-iframe-id="inline-40RqttXDIxvF3sLYPAIZ"
+                    data-form-id="40RqttXDIxvF3sLYPAIZ"
+                    title="Website Form"
+                        >
+                </iframe>
+                <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
         </div>
     </section>
@@ -777,9 +663,9 @@
             <div class="footer-grid">
                 <!-- Column 1 -->
                 <div class="footer-brand-col">
-                    <div class="footer-logo mb-6">Paynance</div>
+                    <div class="footer-logo mb-6">US Healthcare Finance</div>
                     <p class="footer-desc mb-6">Making healthcare accessible through flexible patient financing.</p>
-                    <a href="tel:4694302427" class="footer-phone"><i data-lucide="phone" class="inline-icon-sm"></i> 469-430-2427</a>
+                    <a href="tel:9496103718" class="footer-phone"><i data-lucide="phone" class="inline-icon-sm"></i> +1 (949) 610-3718</a>
                 </div>
                 
                 <!-- Column 2 -->
@@ -815,7 +701,7 @@
             </div>
 
             <div class="footer-bottom-bar mt-8 pt-8 border-t border-white-10 flex text-xs opacity-60">
-                <p>&copy; 2026 Paynance. All rights reserved.All approvals subject to credit profile and eligibility requirements.</p>
+                <p>&copy; 2026 US Healthcare Finance. All rights reserved.All approvals subject to credit profile and eligibility requirements.</p>
             </div>
         </div>
     </footer>

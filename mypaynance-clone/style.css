@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 /* =========================================
    VARIABLES & RESET
@@ -35,36 +35,44 @@ html {
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--body);
   background-color: var(--light-bg);
   line-height: 1.5;
-  font-size: 1.125rem; /* 18px */
+  font-size: 1rem; /* 16px */
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1 {
   color: var(--dark);
-  font-weight: 500;
-  line-height: 1.12;
-  font-family: 'Instrument Serif', serif;
-  font-size: 4.0625rem; /* 65px */
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem; /* 48px */
+}
+
+h2 {
+  color: var(--dark);
+  font-weight: 700;
+  line-height: 1.25;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.25rem; /* 36px */
 }
 
 h3 {
   color: var(--dark);
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: 'Instrument Serif', serif;
-  font-size: 2.5rem; /* 40px */
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem; /* 20px */
 }
 
 h4 {
   color: var(--dark);
-  font-weight: 700;
-  line-height: 1.2;
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem; /* 20px */
 }
 
 .text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6 {
@@ -1080,7 +1088,7 @@ img, svg, i {
 }
 
 /* =========================================
-   PAYNANCE SECTIONS
+   US HEALTHCARE FINANCE SECTIONS
 ========================================= */
 .cp-hero-section {
     background: radial-gradient(circle at 120% 50%, #f6f0ea 0%, #f6f0ea 40%, rgba(246,240,234,0.3) 60%, transparent 100%), #faf8f5;
@@ -1089,39 +1097,39 @@ img, svg, i {
 }
 .cp-hero-text { padding-right: 4rem; }
 .cp-title {
-    font-size: 4.0625rem;
-    line-height: 1.12;
+    font-size: 3rem; /* 48px */
+    line-height: 1.2;
     color: var(--dark);
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2rem;
-    font-family: 'Instrument Serif', serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: -0.02em;
 }
-.cp-title-bold { font-weight: 800; font-family: 'Outfit', sans-serif; }
+.cp-title-bold { font-weight: 800; font-family: 'Inter', sans-serif; }
 .cp-desc {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: var(--dark);
     margin-bottom: 2.5rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 .cp-desc-center {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--body);
-    line-height: 1.5;
+    line-height: 1.6;
     max-width: 48rem;
     margin: 0 auto;
 }
 .btn-cp-blue {
     background-color: var(--primary);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 2.25rem;
     border-radius: 8px;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .btn-cp-blue:hover { background-color: #005bc4; }
 .text-cp-blue { color: #006fee; }
@@ -1238,11 +1246,11 @@ img, svg, i {
 
 /* Features Section */
 .cp-title-alt {
-    font-size: 2.5rem;
-    line-height: 1.2;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.25;
     color: #0d2c54;
-    font-weight: 300;
-    font-family: Georgia, serif;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
     letter-spacing: -0.01em;
 }
 .cp-slider-graphic-wrapper {
@@ -1314,16 +1322,16 @@ img, svg, i {
     position: relative;
 }
 .avvance-title {
-    font-size: 2.5rem;
-    font-family: inherit;
+    font-size: 2.25rem; /* 36px */
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: #020c26;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 .avvance-desc {
-    font-size: 1.35rem;
+    font-size: 1.125rem;
     color: #475569;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 .avvance-list {
     list-style-type: none;

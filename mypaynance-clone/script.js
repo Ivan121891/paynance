@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         });
     }
-    // === Paynance Phone Plans Selection ===
+    // === US Healthcare Finance Phone Plans Selection ===
     const cpPlanCards = document.querySelectorAll('.cp-plan-card');
     cpPlanCards.forEach(card => {
         card.addEventListener('click', () => {
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === Paynance Features Accordion ===
+    // === US Healthcare Finance Features Accordion ===
     const cpFeatures = document.querySelectorAll('.cp-feature-item');
     cpFeatures.forEach(feature => {
         feature.addEventListener('click', () => {
