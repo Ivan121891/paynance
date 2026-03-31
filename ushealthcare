@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>US Healthcare Finance - Healthcare Financing Brokerage | Near 100% Approval</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: #1a1a2e; background: #fff; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 80px; height: 72px;
+      background: #fff; border-bottom: 1px solid #ebebeb;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo { font-size: 1.2rem; font-weight: 800; color: #1a3bdc; }
+    .nav-links { display: flex; gap: 40px; }
+    .nav-links a { font-size: 0.93rem; font-weight: 500; color: #333; }
+    .nav-links a:hover { color: #1a3bdc; }
+    .btn-primary {
+      background: #1a3bdc; color: #fff; border: none; border-radius: 8px;
+      padding: 12px 28px; font-size: 0.93rem; font-weight: 700; cursor: pointer;
+    }
+    .btn-primary:hover { background: #142ec0; }
+
+    /* ── HERO ── */
+    .hero {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 90px 80px 90px; background: #f0ede6; min-height: 680px; gap: 40px;
+    }
+    .hero-left { max-width: 520px; }
+    .hero-left h1 {
+      font-size: 3.8rem; font-weight: 900; line-height: 1.08; color: #12122a;
+      margin-bottom: 28px; letter-spacing: -1px;
+    }
+    .hero-left p {
+      font-size: 1.05rem; color: #555; line-height: 1.7; margin-bottom: 40px; max-width: 440px;
+    }
+    .btn-dark {
+      background: #12122a; color: #fff; border-radius: 10px;
+      padding: 16px 36px; font-size: 1rem; font-weight: 700; cursor: pointer; border: none;
+      display: inline-block; letter-spacing: 0.2px;
+    }
+    .btn-dark:hover { background: #1e1e3a; }
+
+    /* phone mockup */
+    .hero-right { position: relative; flex-shrink: 0; }
+    .phone-frame {
+      width: 310px; border-radius: 42px; background: #fff;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.18);
+      padding: 32px 20px 24px; border: 8px solid #111;
+      position: relative;
+    }
+    .phone-notch {
+      width: 90px; height: 22px; background: #111; border-radius: 12px;
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    }
+    .phone-header {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 12px; padding-top: 8px;
+    }
+    .phone-logo-icon {
+      width: 28px; height: 28px; background: #1a3bdc; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.6rem; font-weight: 900;
+    }
+    .phone-header span { font-weight: 800; font-size: 0.9rem; color: #1a1a2e; }
+    .phone-subtitle { font-size: 0.78rem; text-align: center; color: #444; margin-bottom: 10px; }
+    .phone-subtitle strong { color: #1a3bdc; }
+    .phone-autopay {
+      display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: #555; margin-bottom: 12px;
+    }
+    .phone-autopay .cb {
+      width: 14px; height: 14px; background: #1a3bdc; border-radius: 3px;
+      display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.6rem; flex-shrink: 0;
+    }
+    .phone-autopay .highlight { color: #1a3bdc; font-weight: 700; }
+    .loan-option {
+      border: 1.5px solid #e0e0e0; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px;
+      display: flex; flex-direction: column; gap: 4px; cursor: pointer;
+    }
+    .loan-option.active { border-color: #1a3bdc; }
+    .loan-row { display: flex; justify-content: space-between; align-items: center; }
+    .loan-price { font-weight: 800; font-size: 0.88rem; color: #1a1a2e; }
+    .loan-price span { font-weight: 500; font-size: 0.75rem; color: #777; }
+    .loan-term { font-size: 0.78rem; color: #555; display: flex; align-items: center; gap: 4px; }
+    .loan-detail { display: flex; justify-content: space-between; font-size: 0.72rem; color: #777; }
+    .loan-apr { color: #1a3bdc; font-weight: 700; }
+    .radio-dot {
+      width: 14px; height: 14px; border-radius: 50%; border: 2px solid #1a3bdc;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .radio-dot.filled::after {
+      content: ''; width: 7px; height: 7px; background: #1a3bdc; border-radius: 50%;
+    }
+    .btn-continue {
+      width: 100%; padding: 12px; background: #1a3bdc; color: #fff; border: none;
+      border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; margin-top: 8px;
+    }
+    .phone-approved {
+      text-align: center; font-size: 0.72rem; color: #555; margin-top: 8px;
+    }
+
+    /* ── TICKER ── */
+    .ticker-wrap {
+      background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
+      padding: 16px 0; overflow: hidden; white-space: nowrap;
+    }
+    .ticker-inner {
+      display: inline-flex; gap: 60px; animation: ticker 30s linear infinite;
+    }
+    .ticker-inner:hover { animation-play-state: paused; }
+    .ticker-item {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; font-weight: 600; color: #1a1a2e; flex-shrink: 0;
+    }
+    .ticker-item .stars { color: #f5a623; font-size: 0.85rem; }
+    .ticker-badge {
+      background: #1a3bdc; color: #fff; border-radius: 20px;
+      padding: 3px 12px; font-size: 0.78rem; font-weight: 800;
+    }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* ── SECTION WRAPPER ── */
+    section { padding: 90px 80px; }
+
+    /* ── APPROVAL SECTION ── */
+    .approval-section { background: #fff; }
+    .approval-section h2 {
+      font-size: 2.6rem; font-weight: 900; color: #12122a; max-width: 560px; line-height: 1.15; margin-bottom: 16px;
+    }
+    .approval-section h2 span { color: #1a3bdc; }
+    .approval-grid { display: flex; flex-direction: column; gap: 40px; }
+    .approval-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 60px; }
+    .approval-left { max-width: 500px; }
+    .approval-left p { font-size: 1rem; color: #555; margin-bottom: 0; line-height: 1.7; }
+    .example-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .example-box {
+      background: #fff; border-radius: 14px; padding: 22px 20px;
+      display: flex; flex-direction: column; gap: 14px; align-items: center;
+      border: 1.5px solid #e8e8e8; text-align: center;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .example-box:hover { box-shadow: 0 4px 20px rgba(26,59,220,0.1); border-color: #1a3bdc; }
+    .example-box .ex-badge {
+      background: #e8edff; color: #1a3bdc; font-size: 0.72rem; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px; letter-spacing: 0.5px;
+    }
+    .example-box .ex-arrow { color: #ccc; font-size: 1.2rem; }
+    .example-item { text-align: center; }
+    .example-item .label { font-size: 0.78rem; color: #777; margin-bottom: 4px; }
+    .example-item .value { font-size: 1.25rem; font-weight: 900; color: #1a1a2e; }
+    .example-item .value.blue { color: #1a3bdc; }
+    .example-item .sublabel { font-size: 0.72rem; color: #999; margin-top: 2px; }
+    .example-divider { font-size: 1.5rem; color: #ccc; }
+
+    /* ── FEATURES SECTION ── */
+    .features-section { background: #fff; }
+    .section-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; color: #1a3bdc;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    .features-section h2 {
+      font-size: 2.2rem; font-weight: 900; color: #1a1a2e; max-width: 600px;
+      line-height: 1.25; margin-bottom: 14px;
+    }
+    .features-section > .sub { font-size: 1rem; color: #666; max-width: 560px; margin-bottom: 52px; }
+    .features-layout { display: flex; align-items: flex-start; gap: 80px; }
+    .features-left { flex-shrink: 0; width: 480px; }
+    .features-visual-card {
+      background: linear-gradient(160deg, #d6e4f7 0%, #e8eef5 30%, #f5f0e0 100%);
+      border-radius: 24px; padding: 60px 40px; position: relative;
+    }
+    .features-inner-card {
+      background: #fff; border-radius: 16px; padding: 28px 32px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    }
+    .features-inner-card h4 {
+      font-size: 1.1rem; font-weight: 900; color: #12122a; margin-bottom: 24px;
+    }
+    .feat-slider-track {
+      position: relative; height: 6px; background: #d0d0d0; border-radius: 10px;
+      margin-bottom: 12px;
+    }
+    .feat-slider-fill {
+      height: 100%; background: #12122a; border-radius: 10px; width: 62%;
+    }
+    .feat-slider-dot {
+      width: 18px; height: 18px; background: #fff; border: 3px solid #12122a;
+      border-radius: 50%; position: absolute; top: 50%; transform: translateY(-50%);
+    }
+    .feat-slider-dot.start { left: -2px; }
+    .feat-slider-dot.mid { left: 60%; }
+    .feat-slider-ticks {
+      display: flex; justify-content: space-between; font-size: 0.78rem;
+      color: #1a1a2e; font-weight: 600; margin-top: 4px;
+    }
+    .features-right { flex: 1; }
+    .feat-accordion-item {
+      border-bottom: 1px solid #eee; padding: 22px 0; cursor: pointer;
+    }
+    .feat-accordion-item:first-child { padding-top: 0; }
+    .feat-accordion-item h3 {
+      font-size: 1.05rem; font-weight: 800; color: #12122a;
+    }
+    .feat-accordion-item .feat-desc {
+      display: none; font-size: 0.92rem; color: #666; line-height: 1.65;
+      margin-top: 10px; max-width: 420px;
+    }
+    .feat-accordion-item.active {
+      background: #f0f4ff; border-radius: 14px; padding: 22px 24px;
+      margin: -1px -24px; border-bottom: none;
+    }
+    .feat-accordion-item.active .feat-desc { display: block; }
+    .feat-accordion-item.active h3 { color: #12122a; }
+
+    /* slider bar visual */
+    .slider-visual { margin-bottom: 52px; }
+    .slider-label { font-size: 0.82rem; color: #999; margin-bottom: 6px; }
+    .slider-bar { height: 6px; background: #e0e0e0; border-radius: 10px; position: relative; }
+    .slider-fill { height: 100%; background: #1a3bdc; border-radius: 10px; }
+    .slider-ticks { display: flex; justify-content: space-between; font-size: 0.78rem; color: #bbb; margin-top: 6px; }
+
+    /* ── NETWORK SECTION ── */
+    .network-section { background: #fff; }
+    .network-section h2 {
+      font-size: 2.2rem; font-weight: 900; color: #1a1a2e; max-width: 560px; line-height: 1.25; margin-bottom: 14px;
+    }
+    .network-section > .sub { font-size: 1rem; color: #666; max-width: 520px; margin-bottom: 48px; }
+    .tiers-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 52px; }
+    .tier-card {
+      border: 1.5px solid #e8e8e8; border-radius: 14px; padding: 24px 20px;
+      text-align: center; background: #fff;
+    }
+    .tier-card:first-child { border-color: #1a3bdc; background: #f0f4ff; }
+    .tier-badge {
+      background: #1a3bdc; color: #fff; font-size: 0.72rem; font-weight: 800;
+      padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; display: inline-block;
+    }
+    .tier-name { font-size: 1.05rem; font-weight: 800; color: #1a1a2e; margin-bottom: 4px; }
+    .tier-desc { font-size: 0.8rem; color: #777; }
+
+    /* loan approval card */
+    .loan-approval-card {
+      background: #f5f3ee; border-radius: 16px; padding: 28px 32px; max-width: 420px; margin-bottom: 48px;
+    }
+    .lac-header { font-size: 0.85rem; color: #555; margin-bottom: 16px; font-weight: 600; }
+    .lac-merchant { font-size: 0.82rem; color: #555; margin-bottom: 6px; }
+    .lac-amount { font-size: 1rem; font-weight: 800; color: #1a1a2e; margin-bottom: 16px; }
+    .lac-loan { border: 1.5px solid #1a3bdc; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+    .lac-loan-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+    .lac-main { font-size: 1.1rem; font-weight: 900; color: #1a1a2e; }
+    .lac-sub { font-size: 0.8rem; color: #777; }
+    .lac-btn {
+      width: 100%; padding: 11px; background: #1a3bdc; color: #fff; border: none;
+      border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.88rem;
+    }
+
+    /* ── US BANK SECTION ── */
+    .bank-section {
+      background: linear-gradient(135deg, #e8edf8 0%, #f4f6fb 40%, #ffffff 100%);
+      color: #1a1a2e;
+    }
+    .bank-layout {
+      display: flex; align-items: center; justify-content: space-between; gap: 80px;
+    }
+    .bank-left { flex-shrink: 0; }
+    .bank-phone {
+      width: 380px; background: #fff; border-radius: 42px; padding: 36px 28px 32px;
+      border: 8px solid #111; box-shadow: 0 30px 80px rgba(0,0,0,0.13); position: relative;
+    }
+    .bank-phone-notch {
+      width: 90px; height: 22px; background: #111; border-radius: 12px;
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    }
+    .bank-phone h3 {
+      font-size: 1.45rem; font-weight: 900; color: #12122a; margin-bottom: 10px; margin-top: 8px;
+    }
+    .bank-phone .bp-sub {
+      font-size: 0.82rem; color: #555; line-height: 1.55; margin-bottom: 20px;
+    }
+    .bank-phone .bp-merchant { font-size: 0.82rem; color: #555; margin-bottom: 4px; }
+    .bank-phone .bp-merchant strong { color: #1a1a2e; font-weight: 800; }
+    .bank-phone .bp-invoice {
+      font-size: 0.82rem; color: #555; margin-bottom: 18px;
+      padding-bottom: 14px; border-bottom: 1px solid #eee;
+    }
+    .bank-phone .bp-invoice strong { color: #1a1a2e; font-weight: 800; }
+    .bp-loan-card {
+      border: 1.5px solid #e0e0e0; border-radius: 12px; padding: 16px 18px; margin-bottom: 12px;
+    }
+    .bp-loan-card.primary { border-color: #1a3bdc; }
+    .bp-loan-main { font-size: 1.05rem; font-weight: 900; color: #1a1a2e; margin-bottom: 2px; }
+    .bp-loan-main span { font-weight: 500; font-size: 0.85rem; color: #555; }
+    .bp-loan-meta {
+      display: flex; gap: 24px; font-size: 0.78rem; color: #777; margin-top: 6px;
+    }
+    .bp-loan-meta span { display: flex; flex-direction: column; }
+    .bp-loan-meta .meta-label { font-size: 0.7rem; color: #999; }
+    .bp-loan-meta .meta-val { font-weight: 800; color: #1a1a2e; }
+    .bp-loan-meta .meta-val.blue { color: #1a3bdc; }
+    .bp-loan-btn {
+      width: 100%; padding: 12px; background: #1a3bdc; color: #fff; border: none;
+      border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; margin-top: 10px;
+    }
+    .bp-loan-btn.outline {
+      background: #fff; color: #1a3bdc; border: 2px solid #1a3bdc;
+    }
+    .bank-right { max-width: 540px; }
+    .bank-right h2 {
+      font-size: 2.6rem; font-weight: 900; color: #12122a; line-height: 1.15; margin-bottom: 20px;
+    }
+    .bank-right .bank-desc {
+      font-size: 1.05rem; color: #555; line-height: 1.7; margin-bottom: 32px;
+    }
+    .bank-bullets { list-style: none; display: flex; flex-direction: column; gap: 18px; }
+    .bank-bullets li {
+      font-size: 1.05rem; color: #333; display: flex; align-items: flex-start; gap: 12px; line-height: 1.5;
+    }
+    .bank-bullets li::before {
+      content: '•'; color: #1a1a2e; font-size: 1.4rem; font-weight: 900; flex-shrink: 0; line-height: 1.2;
+    }
+    .bank-bullets li strong { color: #1a1a2e; font-weight: 900; }
+
+    /* ── EXCLUSIVE SECTION ── */
+    .exclusive-section { background: #f5f3ee; }
+    .exclusive-section h2 {
+      font-size: 2rem; font-weight: 900; color: #1a1a2e; max-width: 560px; line-height: 1.25; margin-bottom: 12px;
+    }
+    .exclusive-section .sub { color: #666; margin-bottom: 40px; }
+    .exclusive-pills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .pill {
+      background: #fff; border: 1.5px solid #e0e0e0; border-radius: 30px;
+      padding: 10px 22px; font-size: 0.88rem; font-weight: 600; color: #1a1a2e;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .pill .dot { width: 8px; height: 8px; background: #1a3bdc; border-radius: 50%; }
+
+    /* ── PROCESS SECTION ── */
+    .process-section { background: #fff; }
+    .process-section h2 {
+      font-size: 2.2rem; font-weight: 900; color: #1a1a2e; margin-bottom: 12px;
+    }
+    .process-section .sub { color: #666; margin-bottom: 52px; max-width: 520px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .step-card {
+      background: #f9f9fb; border-radius: 16px; padding: 32px 28px;
+    }
+    .step-num {
+      font-size: 2.5rem; font-weight: 900; color: #e8edff; line-height: 1; margin-bottom: 12px;
+    }
+    .step-card h3 { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; margin-bottom: 8px; }
+    .step-card p { font-size: 0.88rem; color: #666; line-height: 1.6; }
+
+    /* ── SPECIALTIES SECTION ── */
+    .specialties-section { background: #f5f3ee; }
+    .specialties-section h2 {
+      font-size: 2.2rem; font-weight: 900; color: #1a1a2e; margin-bottom: 12px;
+    }
+    .specialties-section .sub { color: #666; margin-bottom: 36px; }
+    .spec-tabs { display: flex; gap: 0; margin-bottom: 36px; border-bottom: 2px solid #e0e0e0; }
+    .spec-tab {
+      padding: 12px 22px; font-size: 0.9rem; font-weight: 600; color: #777;
+      cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .spec-tab.active { color: #1a3bdc; border-bottom-color: #1a3bdc; }
+    .spec-tab:hover { color: #1a3bdc; }
+    .spec-content { display: none; }
+    .spec-content.active { display: block; }
+    .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .spec-card {
+      background: #fff; border-radius: 16px; padding: 32px 28px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+    }
+    .spec-card h3 { font-size: 1.15rem; font-weight: 800; color: #1a1a2e; margin-bottom: 18px; }
+    .spec-ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .spec-ul li {
+      display: flex; gap: 10px; align-items: flex-start;
+      font-size: 0.88rem; color: #444; line-height: 1.5;
+    }
+    .spec-ul li::before {
+      content: '✓'; color: #1a3bdc; font-weight: 900; flex-shrink: 0; margin-top: 1px;
+    }
+    .spec-disclaimer { font-size: 0.72rem; color: #999; margin-top: 16px; }
+
+    /* ── RESULTS SECTION ── */
+    .results-section { background: #1a3bdc; color: #fff; text-align: center; }
+    .results-section h2 {
+      font-size: 2.4rem; font-weight: 900; margin-bottom: 12px;
+    }
+    .results-section .sub { color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 52px; }
+    .results-stats { display: flex; justify-content: center; gap: 80px; }
+    .stat-item .stat-num { font-size: 3.5rem; font-weight: 900; line-height: 1; }
+    .stat-item .stat-label { font-size: 0.9rem; color: rgba(255,255,255,0.8); margin-top: 6px; }
+
+    /* ── CTA SECTION ── */
+    .cta-section { background: #f5f3ee; text-align: center; padding: 100px 60px; }
+    .cta-section h2 {
+      font-size: 2.5rem; font-weight: 900; color: #1a1a2e; max-width: 640px; margin: 0 auto 18px; line-height: 1.2;
+    }
+    .cta-section p { color: #666; max-width: 480px; margin: 0 auto 40px; font-size: 1rem; }
+
+    /* ── GET STARTED FORM ── */
+    .getstarted-section {
+      background: #e8edf8; padding: 80px 60px; text-align: center;
+    }
+    .getstarted-section h2 {
+      font-size: 2.4rem; font-weight: 900; color: #12122a; margin-bottom: 12px;
+    }
+    .getstarted-section .gs-sub {
+      font-size: 1.05rem; color: #555; margin-bottom: 6px;
+    }
+    .getstarted-section .gs-phone {
+      font-size: 1.1rem; font-weight: 800; color: #12122a; margin-bottom: 32px;
+    }
+    .getstarted-form-wrap {
+      max-width: 620px; margin: 0 auto; background: #fff; border-radius: 16px;
+      padding: 40px 44px; box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+      min-height: 520px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #1a1a2e; color: #aaa; padding: 50px 60px 30px;
+    }
+    .footer-top {
+      display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px;
+    }
+    .footer-logo { font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .footer-tagline { font-size: 0.82rem; color: #777; max-width: 220px; }
+    .footer-links { display: flex; gap: 60px; }
+    .footer-col h4 { color: #fff; font-size: 0.9rem; font-weight: 700; margin-bottom: 14px; }
+    .footer-col a { display: block; font-size: 0.83rem; color: #888; margin-bottom: 8px; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid #2a2a3e; padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem;
+    }
+    .footer-disclaimer { color: #555; font-size: 0.72rem; max-width: 700px; margin-top: 16px; line-height: 1.5; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 0 20px; }
+      .hero { flex-direction: column; padding: 50px 20px; }
+      .hero-left h1 { font-size: 2.2rem; }
+      section { padding: 50px 20px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .tiers-grid { grid-template-columns: 1fr 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      .spec-grid { grid-template-columns: 1fr; }
+      .results-stats { gap: 40px; flex-wrap: wrap; }
+      .bank-features { grid-template-columns: 1fr; }
+      .approval-grid { grid-template-columns: 1fr; }
+      .footer-top { flex-direction: column; gap: 32px; }
+      .footer-links { flex-wrap: wrap; gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <div class="nav-logo">US Healthcare Finance</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Network</a>
+    <a href="#">Process</a>
+  </div>
+  <a href="#get-started"><button class="btn-primary">Get Started</button></a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Patient-centric payments built for the modern clinic</h1>
+    <p>Deliver an exceptional experience with flexible, transparent terms that turn single treatments into lifelong patient relationships.</p>
+    <button class="btn-dark">Make A Payment</button>
+  </div>
+
+  <div class="hero-right">
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-header">
+        <div class="phone-logo-icon">US</div>
+        <span>US Healthcare Finance</span>
+      </div>
+      <div class="phone-subtitle">Customized Financing for your <strong>$5,000.00</strong> treatment</div>
+      <div class="phone-autopay">
+        <div class="cb">✓</div>
+        Enroll in AutoPay and get a <span class="highlight">0.5%</span> discount on the loan interest.
+      </div>
+
+      <div class="loan-option active">
+        <div class="loan-row">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="radio-dot filled"></div>
+            <span class="loan-price">$416.67<span>/month</span></span>
+          </div>
+          <span class="loan-term">12 months <span>▲</span></span>
+        </div>
+        <div class="loan-detail">
+          <span>Total Amount<br><strong>$5,000.00</strong></span>
+          <span>APR*<br><strong class="loan-apr">0%</strong></span>
+        </div>
+      </div>
+
+      <div class="loan-option">
+        <div class="loan-row">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="radio-dot"></div>
+            <span class="loan-price">$230.70<span>/month</span></span>
+          </div>
+          <span class="loan-term">24 months <span>▼</span></span>
+        </div>
+        <div class="loan-detail">
+          <span>Total Amount<br><strong>$5,536.80</strong></span>
+          <span>APR*<br><strong class="loan-apr">9.99%</strong></span>
+        </div>
+      </div>
+
+      <div class="loan-option">
+        <div class="loan-row">
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="radio-dot"></div>
+            <span class="loan-price">$185.79<span>/month</span></span>
+          </div>
+          <span class="loan-term">36 months <span>▼</span></span>
+        </div>
+        <div class="loan-detail">
+          <span>Total Amount<br><strong>$6,688.44</strong></span>
+          <span>APR*<br><strong class="loan-apr">19.99%</strong></span>
+        </div>
+      </div>
+
+      <button class="btn-continue">Continue</button>
+      <div class="phone-approved">Your approved patient funding limit is <strong>$10,000</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ── -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item"><span class="stars">★★★★★</span> MedSpa Customer — "Helpful with best options."</div>
+    <div class="ticker-item">Proud Partner <strong>CLUB WYNDHAM</strong></div>
+    <div class="ticker-item"><span class="ticker-badge">+91</span> Net Promoter Score</div>
+    <div class="ticker-item">Proud Partner <strong>LaserAway</strong></div>
+    <div class="ticker-item">Proud Partner <strong>SafeStreets</strong></div>
+    <div class="ticker-item"><span class="stars">★★★★★</span> MedSpa Customer — "Helpful with best options."</div>
+    <div class="ticker-item">Proud Partner <strong>CLUB WYNDHAM</strong></div>
+    <div class="ticker-item"><span class="ticker-badge">+91</span> Net Promoter Score</div>
+    <div class="ticker-item">Proud Partner <strong>LaserAway</strong></div>
+    <div class="ticker-item">Proud Partner <strong>SafeStreets</strong></div>
+  </div>
+</div>
+
+<!-- ── NEAR 100% APPROVAL ── -->
+<section class="approval-section">
+  <div class="approval-grid">
+    <div class="approval-top">
+      <div class="approval-left">
+        <div class="section-label">NEAR 100% APPROVAL</div>
+        <h2>Scaling Your Practice Through <span>Higher Patient Approvals</span></h2>
+        <p>US Healthcare Finance acts as a brokerage, pairing your patients with multiple lenders without multiple hits to their credit.</p>
+      </div>
+    </div>
+    <div class="example-cards">
+        <div class="example-box">
+          <div class="ex-badge">EXAMPLE 1</div>
+          <div class="example-item"><div class="label">Patient pays</div><div class="value blue">$249/mo</div></div>
+          <div class="ex-arrow">↓</div>
+          <div class="example-item"><div class="label">Practice receives</div><div class="value">$6,000</div><div class="sublabel">upfront</div></div>
+        </div>
+        <div class="example-box">
+          <div class="ex-badge">EXAMPLE 2</div>
+          <div class="example-item"><div class="label">Patient pays</div><div class="value blue">$415/mo</div></div>
+          <div class="ex-arrow">↓</div>
+          <div class="example-item"><div class="label">Practice receives</div><div class="value">$10,000</div><div class="sublabel">upfront</div></div>
+        </div>
+        <div class="example-box">
+          <div class="ex-badge">EXAMPLE 3</div>
+          <div class="example-item"><div class="label">Patient pays</div><div class="value blue">$830/mo</div></div>
+          <div class="ex-arrow">↓</div>
+          <div class="example-item"><div class="label">Practice receives</div><div class="value">$20,000</div><div class="sublabel">upfront</div></div>
+        </div>
+        <div class="example-box">
+          <div class="ex-badge">EXAMPLE 4</div>
+          <div class="example-item"><div class="label">Patient pays</div><div class="value blue">$1,038/mo</div></div>
+          <div class="ex-arrow">↓</div>
+          <div class="example-item"><div class="label">Practice receives</div><div class="value">$25,000</div><div class="sublabel">upfront</div></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section class="features-section">
+  <div class="section-label">FEATURES</div>
+  <h2>Better Rates, Faster Payouts, Total Clarity</h2>
+  <p class="sub">From instant pre-approvals to 7-day live support, we've built the ultimate financing toolkit designed to help healthcare practices thrive.</p>
+
+  <div class="features-layout">
+    <div class="features-left">
+      <div class="features-visual-card">
+        <div class="features-inner-card">
+          <h4>Get Instant Pre-Approval</h4>
+          <div class="feat-slider-track">
+            <div class="feat-slider-fill"></div>
+            <div class="feat-slider-dot start"></div>
+            <div class="feat-slider-dot mid"></div>
+          </div>
+          <div class="feat-slider-ticks">
+            <span>$0</span><span>$2,000</span><span>$4,000</span><span>$6,000+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-right">
+      <div class="feat-accordion-item active" onclick="toggleFeat(this)">
+        <h3>Real-Time Offers with Zero Credit Risk</h3>
+        <p class="feat-desc">Empower your patients with instant pre-approvals using soft-credit inquiries that never impact their scores.**</p>
+      </div>
+      <div class="feat-accordion-item" onclick="toggleFeat(this)">
+        <h3>Radical Transparency in Every Plan</h3>
+        <p class="feat-desc">No hidden fees. Every financing option is presented clearly so patients and practices always know what to expect.</p>
+      </div>
+      <div class="feat-accordion-item" onclick="toggleFeat(this)">
+        <h3>Smart Automation for Stress-Free Repayment</h3>
+        <p class="feat-desc">AutoPay enrollment and intelligent reminders keep repayments on track without manual follow-up.</p>
+      </div>
+      <div class="feat-accordion-item" onclick="toggleFeat(this)">
+        <h3>Next-Gen Patient Loyalty Tools</h3>
+        <p class="feat-desc">Turn one-time patients into lifelong clients with financing experiences that feel personal and caring.</p>
+      </div>
+      <div class="feat-accordion-item" onclick="toggleFeat(this)">
+        <h3>Premium Concierge Support</h3>
+        <p class="feat-desc">7-day live support for both your practice team and patients, ensuring a seamless financing journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NETWORK ── -->
+<section class="network-section">
+  <div class="section-label">LENDER NETWORK</div>
+  <h2>A Network of Lenders in One Platform</h2>
+  <p class="sub">We act as a brokerage, pairing your patients with multiple lenders without multiple hits to their credit.</p>
+
+  <div class="tiers-grid">
+    <div class="tier-card">
+      <div class="tier-badge">Tier 1</div>
+      <div class="tier-name">Prime</div>
+      <div class="tier-desc">0% Interest Options</div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge">Tier 2</div>
+      <div class="tier-name">Near-Prime</div>
+      <div class="tier-desc">Extended Terms</div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge">Tier 3</div>
+      <div class="tier-name">Sub-Prime</div>
+      <div class="tier-desc">Down to 500 FICO</div>
+    </div>
+    <div class="tier-card">
+      <div class="tier-badge">Tier 4</div>
+      <div class="tier-name">No-Credit</div>
+      <div class="tier-desc">Payment Plans</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ── US BANK ── -->
+<section class="bank-section">
+  <div class="bank-layout">
+    <div class="bank-left">
+      <div class="bank-phone">
+        <div class="bank-phone-notch"></div>
+        <h3>You're approved!</h3>
+        <p class="bp-sub">Choose the Avvance installment loan that works best for you. Terms may change if you leave the application.</p>
+        <div class="bp-merchant">Merchant:<strong>John Dela Cruz</strong></div>
+        <div class="bp-invoice">Invoice amount:<strong>$6,200.00</strong></div>
+
+        <div class="bp-loan-card primary">
+          <div class="bp-loan-main">$172.22 <span>per month for 36 months</span></div>
+          <div class="bp-loan-meta">
+            <span><span class="meta-label">APR</span><span class="meta-val blue">0%</span></span>
+            <span><span class="meta-label">Interest</span><span class="meta-val">$0.00</span></span>
+            <span><span class="meta-label">Total</span><span class="meta-val">$6,200.00</span></span>
+          </div>
+          <button class="bp-loan-btn">Choose this loan</button>
+        </div>
+
+        <div class="bp-loan-card">
+          <div class="bp-loan-main">$122.74 <span>per month for 60 months</span></div>
+          <div class="bp-loan-meta">
+            <span><span class="meta-label">APR</span><span class="meta-val">6.99%</span></span>
+            <span><span class="meta-label">Interest</span><span class="meta-val">$1,164.29</span></span>
+            <span><span class="meta-label">Total</span><span class="meta-val" style="color:#1a3bdc">$7,364.29</span></span>
+          </div>
+          <button class="bp-loan-btn outline">Choose this loan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bank-right">
+      <h2>Top Lending Powered by U.S. Bank.</h2>
+      <p class="bank-desc">Leverage the trust of a top-tier financial institution to offer your patients the lowest possible rates and most reliable terms:</p>
+      <ul class="bank-bullets">
+        <li>Loan options from <strong>$300 - $25,000</strong>.</li>
+        <li>Repayment terms from <strong>3 to 60 months</strong>.</li>
+        <li>A fast, secure <strong>mobile-friendly application</strong> process.</li>
+        <li>Customer repayment and servicing through <strong>U.S. Bank</strong>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXCLUSIVE ── -->
+<section class="exclusive-section">
+  <div class="section-label">FINANCING EXCLUSIVE TO THE ELITE</div>
+  <h2>Gain access to specialized lender programs and guaranteed funding structures previously unavailable to independent clinics.</h2>
+  <p class="sub">Multi-tier approval structure, guaranteed minimum funding programs, and soft inquiry only.</p>
+  <div class="exclusive-pills">
+    <div class="pill"><span class="dot"></span> Multi-tier approval structure</div>
+    <div class="pill"><span class="dot"></span> Guaranteed minimum funding programs</div>
+    <div class="pill"><span class="dot"></span> Soft inquiry only</div>
+    <div class="pill"><span class="dot"></span> No hard credit pull</div>
+    <div class="pill"><span class="dot"></span> Same-day decisions</div>
+    <div class="pill"><span class="dot"></span> Independent clinic access</div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process-section">
+  <div class="section-label">THE PROCESS</div>
+  <h2>The US Healthcare Finance Flow: Simple. Fast. Seamless.</h2>
+  <p class="sub">Our frictionless platform integrates directly into your practice, allowing for real-time approvals without slowing down your consultations.</p>
+
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <h3>Patients Apply</h3>
+      <p>60-second mobile application. Patients complete the entire process from their smartphone with no paperwork.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <h3>We Approve</h3>
+      <p>Near 100% coverage. Our multi-lender network maximizes approvals even for patients with low or no credit.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <h3>You Get Paid</h3>
+      <p>Funds within 1–2 business days. Practice receives payment quickly so you can focus on delivering care.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPECIALTIES ── -->
+<section class="specialties-section">
+  <div class="section-label">SPECIALTIES</div>
+  <h2>Built for Every Healthcare Practice</h2>
+  <p class="sub">Tailored financing programs for the unique needs of each specialty.</p>
+
+  <div class="spec-tabs">
+    <div class="spec-tab active" onclick="showTab('medspa', this)">Medical Spas</div>
+    <div class="spec-tab" onclick="showTab('chiro', this)">Chiropractors</div>
+    <div class="spec-tab" onclick="showTab('dentist', this)">Dentists</div>
+    <div class="spec-tab" onclick="showTab('ortho', this)">Orthodontists</div>
+    <div class="spec-tab" onclick="showTab('other', this)">Other</div>
+  </div>
+
+  <div id="tab-medspa" class="spec-content active">
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Medical Spas Program Highlights</h3>
+        <ul class="spec-ul">
+          <li>Guaranteed minimum of $4–6k</li>
+          <li>(Near) 100% approval rate*</li>
+          <li>12-month 0% APR promo, max 24-month term</li>
+          <li>First down payment starting $99</li>
+          <li>Soft inquiry only</li>
+          <li>60-second patient mobile application</li>
+          <li>No proofs required</li>
+          <li>Payout released next 1–2 business days</li>
+        </ul>
+        <p class="spec-disclaimer">*Active SSN or Tax ID required. No active bankruptcies.</p>
+      </div>
+      <div>
+        <div style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 20px rgba(0,0,0,0.07)">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:16px;color:#1a1a2e">Why Medical Spas Choose Us</h3>
+          <p style="font-size:0.88rem;color:#666;line-height:1.65">
+            Medical spas see higher average ticket sizes and need a financing partner that can approve patients for elective aesthetic procedures. Our network of lenders specializes in cosmetic and wellness financing, giving your patients multiple options without the friction of traditional credit applications.
+          </p>
+          <a href="#get-started"><button class="btn-primary" style="margin-top:20px">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-chiro" class="spec-content">
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Chiropractors Program Highlights</h3>
+        <ul class="spec-ul">
+          <li>Guaranteed minimum of $3–5k</li>
+          <li>(Near) 100% approval rate*</li>
+          <li>Flexible payment terms for long-term care</li>
+          <li>Soft inquiry only</li>
+          <li>60-second patient mobile application</li>
+          <li>Payout released next 1–2 business days</li>
+        </ul>
+        <p class="spec-disclaimer">*Active SSN or Tax ID required. No active bankruptcies.</p>
+      </div>
+      <div>
+        <div style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 20px rgba(0,0,0,0.07)">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:16px;color:#1a1a2e">Why Chiropractors Choose Us</h3>
+          <p style="font-size:0.88rem;color:#666;line-height:1.65">
+            Chiropractic care often involves multiple ongoing visits. Our flexible long-term payment options make it easy for patients to commit to full care plans, increasing your per-patient revenue and retention.
+          </p>
+          <a href="#get-started"><button class="btn-primary" style="margin-top:20px">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-dentist" class="spec-content">
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Dentists Program Highlights</h3>
+        <ul class="spec-ul">
+          <li>Approvals up to $15k for major procedures</li>
+          <li>(Near) 100% approval rate*</li>
+          <li>In-chair instant decisions</li>
+          <li>Soft inquiry only</li>
+          <li>Payout released next 1–2 business days</li>
+        </ul>
+        <p class="spec-disclaimer">*Active SSN or Tax ID required. No active bankruptcies.</p>
+      </div>
+      <div>
+        <div style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 20px rgba(0,0,0,0.07)">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:16px;color:#1a1a2e">Why Dentists Choose Us</h3>
+          <p style="font-size:0.88rem;color:#666;line-height:1.65">
+            Dental procedures can be expensive. In-chair instant decisions mean patients say yes before they leave, and our high approval limits cover even the most comprehensive treatment plans.
+          </p>
+          <a href="#get-started"><button class="btn-primary" style="margin-top:20px">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-ortho" class="spec-content">
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Orthodontists Program Highlights</h3>
+        <ul class="spec-ul">
+          <li>Customizable recurring monthly terms</li>
+          <li>(Near) 100% approval rate*</li>
+          <li>Zero risk to the practice for defaults</li>
+          <li>Soft inquiry only</li>
+          <li>Payout released next 1–2 business days</li>
+        </ul>
+        <p class="spec-disclaimer">*Active SSN or Tax ID required. No active bankruptcies.</p>
+      </div>
+      <div>
+        <div style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 20px rgba(0,0,0,0.07)">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:16px;color:#1a1a2e">Why Orthodontists Choose Us</h3>
+          <p style="font-size:0.88rem;color:#666;line-height:1.65">
+            Orthodontic treatment is a long-term commitment. Our customizable recurring payment structures make braces and aligners accessible to more families while protecting your practice from default risk.
+          </p>
+          <a href="#get-started"><button class="btn-primary" style="margin-top:20px">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-other" class="spec-content">
+    <div class="spec-grid">
+      <div class="spec-card">
+        <h3>Other Specialties Program Highlights</h3>
+        <ul class="spec-ul">
+          <li>Custom limits based on procedure types</li>
+          <li>(Near) 100% approval rate*</li>
+          <li>Multiple lender matching</li>
+          <li>Soft inquiry only</li>
+          <li>Payout released next 1–2 business days</li>
+        </ul>
+        <p class="spec-disclaimer">*Active SSN or Tax ID required. No active bankruptcies.</p>
+      </div>
+      <div>
+        <div style="background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 20px rgba(0,0,0,0.07)">
+          <h3 style="font-size:1rem;font-weight:800;margin-bottom:16px;color:#1a1a2e">Any Medical Practice</h3>
+          <p style="font-size:0.88rem;color:#666;line-height:1.65">
+            From plastic surgery to vision care, we support virtually any healthcare specialty with custom lending programs designed for your specific procedure types and average ticket size.
+          </p>
+          <a href="#get-started"><button class="btn-primary" style="margin-top:20px">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── RESULTS ── -->
+<section class="results-section">
+  <div class="section-label" style="color:#7a9bff">PROVEN RESULTS</div>
+  <h2>Built for Scale. Designed for Trust.</h2>
+  <p class="sub">Our platform doesn't just process payments — it optimizes your entire patient financial experience, reducing friction and increasing conversion at every touchpoint.</p>
+
+  <div class="results-stats">
+    <div class="stat-item">
+      <div class="stat-num">98.4%</div>
+      <div class="stat-label">Approval Rate</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">+91</div>
+      <div class="stat-label">Net Promoter Score</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1–2</div>
+      <div class="stat-label">Business Day Payouts</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">60s</div>
+      <div class="stat-label">Patient Application</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <h2>Don't Leave Growth to Chance.</h2>
+  <p>Let's optimize your patient financing strategy and unlock your practice's true potential today.</p>
+  <a href="#get-started"><button class="btn-primary" style="font-size:1rem;padding:15px 40px">Get Started</button></a>
+</section>
+
+<!-- ── GET STARTED FORM ── -->
+<section class="getstarted-section" id="get-started">
+  <h2>Get Started</h2>
+  <p class="gs-sub">Let's discuss the best financing program for your practice</p>
+  <p class="gs-phone">Call us: +1 (949) 610-3718</p>
+  <div class="getstarted-form-wrap">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/40RqttXDIxvF3sLYPAIZ"
+      style="width:100%;height:100%;border:none;border-radius:3px;min-height:499px"
+      id="inline-40RqttXDIxvF3sLYPAIZ"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Website Form"
+      data-height="499"
+      data-layout-iframe-id="inline-40RqttXDIxvF3sLYPAIZ"
+      data-form-id="40RqttXDIxvF3sLYPAIZ"
+      title="Website Form"
+    ></iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">US Healthcare Finance</div>
+      <div class="footer-tagline">Healthcare Financing Brokerage with Near 100% Approval</div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#">Features</a>
+        <a href="#">Network</a>
+        <a href="#">Process</a>
+        <a href="#">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Specialties</h4>
+        <a href="#">Medical Spas</a>
+        <a href="#">Chiropractors</a>
+        <a href="#">Dentists</a>
+        <a href="#">Orthodontists</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 US Healthcare Finance. All rights reserved.</span>
+    <span>Made in the USA 🇺🇸</span>
+  </div>
+  <p class="footer-disclaimer">
+    *Near 100% approval requires active SSN or Tax ID. No active bankruptcies. APR and terms vary by lender and credit profile.
+    0% APR promotional financing available for qualified applicants. All loan decisions are made by our network of third-party lenders.
+    US Healthcare Finance is a financing brokerage, not a lender.
+  </p>
+</footer>
+
+<script>
+  function showTab(id, el) {
+    document.querySelectorAll('.spec-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.spec-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    el.classList.add('active');
+  }
+  function toggleFeat(el) {
+    document.querySelectorAll('.feat-accordion-item').forEach(i => i.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
