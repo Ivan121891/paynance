@@ -203,7 +203,7 @@
         </section>
 
         <!-- Legacy Hero (Now Network) -->
-        <section id="network" class="hero-section" style="padding: 6rem 0;">
+        <section id="network" class="hero-section py-section-md">
             <div class="hero-bg-accent"></div>
             <div class="container hero-container">
                 <div class="hero-content">
@@ -221,8 +221,8 @@
                             <button class="amount-btn" data-amount="20000" data-monthly="499" data-receive="12,000" onclick="selectAmount(this)" style="flex: 1; padding: 0.5rem 0.25rem; border-radius: 99px; border: none; background: transparent; cursor: pointer; font-weight: 600; color: #64748b; transition: all 0.2s; font-family: inherit; font-size: 0.9rem; min-width: 3.25rem;">$20k</button>
                             <button class="amount-btn active" data-amount="25000" data-monthly="625" data-receive="15,000" onclick="selectAmount(this)" style="flex: 1; padding: 0.5rem 0.25rem; border-radius: 99px; border: none; background: var(--primary); color: white; cursor: pointer; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s; font-family: inherit; font-size: 0.9rem; min-width: 3.25rem;">$25k</button>
                         </div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; width: 100%;">
-                            <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div class="payment-card-details">
+                            <div class="payment-card-side">
                                 <div class="icon-bubble" style="width: 48px; height: 48px;"><i data-lucide="dollar-sign"></i></div>
                                 <div class="payment-info">
                                     <span class="label" style="display: block;">Patient pays</span>
@@ -230,7 +230,7 @@
                                 </div>
                             </div>
                             <i data-lucide="arrow-right" class="arrow-icon"></i>
-                            <div class="receive-info text-right">
+                            <div class="receive-info text-right payment-card-side">
                                 <span class="label" style="display: block;">Practice receives</span>
                                 <span class="receive-amount" id="practiceReceives">$15,000</span>
                                 <span class="sub-label" style="display: block;">upfront</span>
@@ -242,14 +242,14 @@
         </section>
 
         <!-- US Healthcare Finance Features Section -->
-        <section id="features" class="bg-white" style="padding: 9rem 0 6rem 0;">
+        <section id="features" class="bg-white py-section-xl">
             <div class="container max-w-5xl mx-auto flex flex-col items-center">
                 <div class="text-center mb-16 px-4">
                     <h2 class="cp-title-alt mb-6">Better Rates, Faster Payouts, Total Clarity</h2>
                     <p class="cp-desc-center">From instant pre-approvals to 7-day live support, we've built the ultimate financing toolkit designed to help healthcare practices thrive.</p>
                 </div>
 
-                <div class="flex flex-col lg-flex-row w-full items-center" style="gap: 4rem;">
+                <div class="flex flex-col lg-flex-row w-full items-center responsive-gap">
                     <!-- Left Graphic: Pre-Approval Card -->
                     <div class="lg-w-1-2 cp-slider-graphic-wrapper">
                         <div class="cp-slider-card shadow-lg">
@@ -273,7 +273,7 @@
                     </div>
 
                     <!-- Right Features Accordion -->
-                    <div class="lg-w-1-2 flex flex-col w-full" style="gap: 1rem; padding-right: 1rem;">
+                    <div class="lg-w-1-2 flex flex-col w-full cp-features-wrapper" style="gap: 1rem;">
                         <div class="cp-feature-item active">
                             <h4 class="cp-feature-header">Real-Time Offers with Zero Credit Risk</h4>
                             <p class="cp-feature-body">Empower your patients with instant pre-approvals using soft-credit inquiries that never impact their scores.**</p>
@@ -315,7 +315,7 @@
 
         <!-- Avvance US Bank Section -->
         <section class="avvance-section">
-            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 4rem;">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center responsive-gap">
                 <div class="lg-w-1-2 flex justify-center" style="position: relative;">
                     <div class="avvance-glow avvance-glow-blue"></div>
                     <div class="avvance-glow avvance-glow-green"></div>
@@ -367,7 +367,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg-w-1-2" style="padding-left: 2rem;">
+                <div class="lg-w-1-2 cp-avvance-text">
                     <h2 class="avvance-title mb-6">Top Lending Powered by U.S. Bank.</h2>
                     <p class="avvance-desc mb-6">Leverage the trust of a top-tier financial institution to offer your patients the lowest possible rates and most reliable terms:</p>
                     <ul class="avvance-list">
@@ -381,17 +381,17 @@
         </section>
 
         <!-- Access Programs Section -->
-        <section style="background-color: var(--light-bg); padding: 6rem 0 6rem 0;">
-            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row" style="gap: 4rem; align-items: center;">
-                <div class="lg-w-2-5" style="padding-right: 2rem;">
-                    <h2 class="font-bold mb-5" style="line-height: 1.2; color: #1e293b; font-size: 2.25rem; letter-spacing: -0.02em;">
+        <section class="py-section-md" style="background-color: var(--light-bg);">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center responsive-gap">
+                <div class="lg-w-2-5 cp-elite-text">
+                    <h2 class="font-bold mb-5 elite-title">
                         Financing Exclusive <br><span class="text-primary">to the Elite</span>
                     </h2>
-                    <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; padding-right: 1rem;">
+                    <p class="elite-desc">
                         Gain access to specialized lender programs and guaranteed funding structures that were previously unavailable to independent clinics.
                     </p>
                 </div>
-                <div class="lg-w-3-5 w-full flex flex-col" style="gap: 1.25rem; padding-left: 1rem;">
+                <div class="lg-w-3-5 w-full flex flex-col cp-elite-features" style="gap: 1.25rem;">
                     <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="layers"></i></div><span class="feature-text">Multi-tier approval structure</span></div>
                     <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="banknote"></i></div><span class="feature-text">Guaranteed minimum funding programs</span></div>
                     <div class="feature-card-horizontal"><div class="icon-wrapper"><i data-lucide="search"></i></div><span class="feature-text">Soft inquiry only</span></div>
@@ -586,7 +586,7 @@
 
         <!-- Network Spotlight (Legacy Hero) -->
         <section id="network-legacy" class="py-20 bg-light-blue" style="overflow: hidden; border-bottom: 1px solid rgba(0,0,0,0.05);">
-            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center" style="gap: 4rem;">
+            <div class="container max-w-6xl mx-auto flex flex-col lg-flex-row items-center responsive-gap">
                 <div class="lg-w-1-2">
                     <div class="hero-badge">Proven Results</div>
                     <h2 class="section-title text-left mb-6">Built for Scale. <br>Designed for Trust.</h2>
@@ -605,7 +605,7 @@
         </section>
 
         <!-- Final CTA Section -->
-        <section class="cta-gradient-section text-center text-white" style="padding: 8rem 0;">
+        <section class="cta-gradient-section text-center text-white py-section-lg">
             <div class="container max-w-4xl mx-auto flex flex-col items-center">
                 <h2 class="font-bold mb-4" style="font-size: 2.25rem; line-height: 1.3; letter-spacing: -0.01em;">
                     Don't Leave Growth to Chance.
