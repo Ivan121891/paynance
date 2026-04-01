@@ -146,6 +146,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // === Amount Selector Logic ===
+    window.selectAmount = function(btn) {
+        // Remove active styles from all buttons
+        const allBtns = document.querySelectorAll('.amount-btn');
+        allBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.background = 'transparent';
+            b.style.color = '#64748b';
+            b.style.boxShadow = 'none';
+        });
+
+        // Add active styles to clicked button
+        btn.classList.add('active');
+        btn.style.background = 'var(--primary)';
+        btn.style.color = 'white';
+        btn.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+
+        // Update card values
+        const monthly = btn.getAttribute('data-monthly');
+        const receive = btn.getAttribute('data-receive');
+        
+        const patientPaysObj = document.getElementById('patientPays');
+        if (patientPaysObj) {
+            patientPaysObj.innerHTML = `$${monthly}<span class="sub">/mo</span>`;
+        }
+        
+        const practiceReceivesObj = document.getElementById('practiceReceives');
+        if (practiceReceivesObj) {
+            practiceReceivesObj.innerText = `$${receive}`;
+        }
+    };
+
     // === US Healthcare Finance Features Accordion ===
     const cpFeatures = document.querySelectorAll('.cp-feature-item');
     cpFeatures.forEach(feature => {
