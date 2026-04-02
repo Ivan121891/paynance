@@ -1480,9 +1480,9 @@ img, svg, i {
   .lenders-grid { grid-template-columns: 1fr 1fr; }
   .tabs-nav { flex-direction: column; }
   .tab-grid { grid-template-columns: 1fr; }
-  .footer-container { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .footer-brand-col, .footer-links-col { margin-bottom: 2rem; }
+  .footer-container { grid-template-columns: 1fr; gap: 1.5rem; padding-bottom: 1.5rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-brand-col, .footer-links-col { margin-bottom: 0; }
   .nav-links, .nav-actions .btn-primary { display: none; }
   .mobile-menu-btn { display: block; }
   
@@ -1499,6 +1499,7 @@ img, svg, i {
 }
 
 @media (max-width: 480px) {
+  .site-footer { padding-top: 2rem; }
   .cp-hero-section { padding-top: 6rem; padding-bottom: 2rem; }
   /* Mobile Typography Tuning */
   .hero-content h1 { font-size: 1.875rem; line-height: 1.15; }
@@ -1512,7 +1513,8 @@ img, svg, i {
   
   .lenders-grid { grid-template-columns: 1fr; }
   
-  .footer-grid { text-align: center; }
+  .footer-container { gap: 1rem; }
+  .footer-grid { text-align: center; gap: 1rem; }
   .footer-brand-col { display: flex; flex-direction: column; align-items: center; }
   .footer-bottom-bar { justify-content: center; text-align: center; }
   
