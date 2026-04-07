@@ -1429,6 +1429,32 @@ img, svg, i {
     line-height: 1.7;
     font-size: 1.05rem;
 }
+.feature-card-horizontal {
+    background-color: white;
+    padding: 1.25rem 1.5rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.02);
+}
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background-color: #f0fdf4;
+    color: #16a34a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.feature-text {
+    font-weight: 500;
+    color: #0f172a;
+    font-size: 1.05rem;
+}
 .payment-card-details {
     display: flex;
     align-items: center;
@@ -1456,6 +1482,46 @@ img, svg, i {
 .py-section-lg { padding: 8rem 0; }
 .py-section-md { padding: 6rem 0; }
 .responsive-gap { gap: 4rem; }
+
+/* =========================================
+   NETWORK LENDERS GRID
+========================================= */
+.network-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+.network-card {
+    background-color: #fdfaf6;
+    border-radius: 12px;
+    padding: 1.75rem 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.03);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.network-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+.network-card-title {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+.network-card-desc {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+    .network-cards-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+@media (max-width: 600px) {
+    .network-cards-grid { grid-template-columns: 1fr; }
+}
 
 /* =========================================
    RESPONSIVE
